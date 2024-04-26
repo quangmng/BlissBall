@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-			//Wendy has connected to the BB
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
