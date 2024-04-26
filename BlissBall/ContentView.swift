@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  BlissBubble
+//  BlissBall
 //
 //  Created by Quang Minh Nguyen on 22/4/2024.
 //

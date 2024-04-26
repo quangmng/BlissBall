@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C55FBB0F2BD5F679000655DE /* BlissBubbleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55FBB0E2BD5F679000655DE /* BlissBubbleApp.swift */; };
+		C55FBB0F2BD5F679000655DE /* BlissBallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55FBB0E2BD5F679000655DE /* BlissBallApp.swift */; };
 		C55FBB112BD5F679000655DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55FBB102BD5F679000655DE /* ContentView.swift */; };
 		C55FBB132BD5F67A000655DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55FBB122BD5F67A000655DE /* Assets.xcassets */; };
 		C55FBB162BD5F67A000655DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55FBB152BD5F67A000655DE /* Preview Assets.xcassets */; };
@@ -15,7 +15,7 @@
 
 /* Begin PBXFileReference section */
 		C55FBB0B2BD5F679000655DE /* BlissBubble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlissBubble.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C55FBB0E2BD5F679000655DE /* BlissBubbleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlissBubbleApp.swift; sourceTree = "<group>"; };
+		C55FBB0E2BD5F679000655DE /* BlissBallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlissBallApp.swift; sourceTree = "<group>"; };
 		C55FBB102BD5F679000655DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C55FBB122BD5F67A000655DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C55FBB152BD5F67A000655DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 		C55FBB022BD5F679000655DE = {
 			isa = PBXGroup;
 			children = (
-				C55FBB0D2BD5F679000655DE /* BlissBubble */,
+				C55FBB0D2BD5F679000655DE /* BlissBall */,
 				C55FBB0C2BD5F679000655DE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,15 +48,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C55FBB0D2BD5F679000655DE /* BlissBubble */ = {
+		C55FBB0D2BD5F679000655DE /* BlissBall */ = {
 			isa = PBXGroup;
 			children = (
-				C55FBB0E2BD5F679000655DE /* BlissBubbleApp.swift */,
+				C55FBB0E2BD5F679000655DE /* BlissBallApp.swift */,
 				C55FBB102BD5F679000655DE /* ContentView.swift */,
 				C55FBB122BD5F67A000655DE /* Assets.xcassets */,
 				C55FBB142BD5F67A000655DE /* Preview Content */,
 			);
-			path = BlissBubble;
+			path = BlissBall;
 			sourceTree = "<group>";
 		};
 		C55FBB142BD5F67A000655DE /* Preview Content */ = {
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C55FBB062BD5F679000655DE /* Build configuration list for PBXProject "BlissBubble" */;
+			buildConfigurationList = C55FBB062BD5F679000655DE /* Build configuration list for PBXProject "BlissBall" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -138,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C55FBB112BD5F679000655DE /* ContentView.swift in Sources */,
-				C55FBB0F2BD5F679000655DE /* BlissBubbleApp.swift in Sources */,
+				C55FBB0F2BD5F679000655DE /* BlissBallApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +271,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BlissBubble/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BlissBall/Preview Content\"";
 				DEVELOPMENT_TEAM = 4YQ66K5T88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -300,7 +300,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BlissBubble/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BlissBall/Preview Content\"";
 				DEVELOPMENT_TEAM = 4YQ66K5T88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -325,7 +325,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C55FBB062BD5F679000655DE /* Build configuration list for PBXProject "BlissBubble" */ = {
+		C55FBB062BD5F679000655DE /* Build configuration list for PBXProject "BlissBall" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C55FBB172BD5F67A000655DE /* Debug */,
