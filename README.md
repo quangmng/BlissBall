@@ -1,4 +1,4 @@
-# BlissBubble
+# BlissBall 
 Technologies used: <br><br>
 ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white)
 ![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white)
