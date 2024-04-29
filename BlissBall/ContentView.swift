@@ -9,26 +9,58 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-			Circle()
-				.frame(width:250)
-				.foregroundColor(.black)
-			Circle()
-				.frame(width:150)
-				.foregroundColor(.white)
-				.padding([.leading, .top],40)
-			Text("8")
-				.font(.system(size: 70))
-				.padding([.leading, .top],46)
-			
-			
-//            Image(systemName: "globe")
-//                .imageScale(.large)
-//                .foregroundStyle(.tint)
-//            Text("Hello, world!")
+        NavigationStack {
+          VStack {
+            Text("BlissBall")
+              .font(.system(size: 64))
+              .fontWeight(.bold)
+              .foregroundStyle(.primary)
+              .padding(.top, 30)
+            
+            Spacer()
+            
+  //          ZStack {
+  //            LuckyBall()
+  //          }
+            
+            NavigationLink {
+              HomeView()
+            } label: {
+              Image("billiard ball")
+                .resizable()
+                .frame(width: 280, height: 280)
+            }
+            
+            Text("Tap Ball to Begin")
+              .font(.system(size: 18))
+              .fontWeight(.semibold)
+              .padding(.vertical, 20)
+              .foregroundStyle(LinearGradient(
+                colors: [.gray, .black],
+                startPoint: .leading,
+                endPoint: .trailing
+              ))
+            
+            Spacer()
+          }
+          .padding()
         }
-        .padding()
     }
+}
+
+struct LuckyBall: View {
+  var body: some View {
+    Circle()
+      .frame(width:250)
+      .foregroundColor(.black)
+    Circle()
+      .frame(width:150)
+      .foregroundColor(.white)
+      .padding([.leading, .top],40)
+    Text("8")
+      .font(.system(size: 70))
+      .padding([.leading, .top],46)
+  }
 }
 
 #Preview {
