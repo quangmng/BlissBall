@@ -24,9 +24,9 @@ struct ContentView: View {
   //          }
             
             NavigationLink {
-              HomeView()
+              MainTabView()
             } label: {
-              Image("billiard ball")
+              Image("blissball")
                 .resizable()
                 .frame(width: 280, height: 280)
             }

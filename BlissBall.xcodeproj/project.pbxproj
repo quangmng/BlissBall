@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3A7968742BDF29C400CFEC27 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968732BDF29C400CFEC27 /* HomeView.swift */; };
+		3A7968762BE50EB700CFEC27 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968752BE50EB700CFEC27 /* MainTabView.swift */; };
+		3A79687D2BE50FB000CFEC27 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A79687C2BE50FB000CFEC27 /* Tab.swift */; };
+		3A7968812BE51B0500CFEC27 /* BlissBallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968802BE51B0500CFEC27 /* BlissBallView.swift */; };
+		3A7968832BE51B1000CFEC27 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968822BE51B1000CFEC27 /* SettingView.swift */; };
+		3A7968852BE51B2900CFEC27 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968842BE51B2900CFEC27 /* TaskView.swift */; };
+		3A79688A2BE51B7F00CFEC27 /* SelfAffirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968892BE51B7F00CFEC27 /* SelfAffirmationView.swift */; };
+		3A79688C2BE51B8F00CFEC27 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A79688B2BE51B8F00CFEC27 /* CustomView.swift */; };
 		C55FBB0F2BD5F679000655DE /* BlissBallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55FBB0E2BD5F679000655DE /* BlissBallApp.swift */; };
 		C55FBB112BD5F679000655DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55FBB102BD5F679000655DE /* ContentView.swift */; };
 		C55FBB132BD5F67A000655DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55FBB122BD5F67A000655DE /* Assets.xcassets */; };
@@ -16,6 +23,13 @@
 
 /* Begin PBXFileReference section */
 		3A7968732BDF29C400CFEC27 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3A7968752BE50EB700CFEC27 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		3A79687C2BE50FB000CFEC27 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		3A7968802BE51B0500CFEC27 /* BlissBallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlissBallView.swift; sourceTree = "<group>"; };
+		3A7968822BE51B1000CFEC27 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		3A7968842BE51B2900CFEC27 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		3A7968892BE51B7F00CFEC27 /* SelfAffirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfAffirmationView.swift; sourceTree = "<group>"; };
+		3A79688B2BE51B8F00CFEC27 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		C55FBB0B2BD5F679000655DE /* BlissBubble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlissBubble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C55FBB0E2BD5F679000655DE /* BlissBallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlissBallApp.swift; sourceTree = "<group>"; };
 		C55FBB102BD5F679000655DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +48,91 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A7968772BE50F6C00CFEC27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A79687C2BE50FB000CFEC27 /* Tab.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A7968782BE50F7100CFEC27 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				C55FBB102BD5F679000655DE /* ContentView.swift */,
+				3A7968752BE50EB700CFEC27 /* MainTabView.swift */,
+				3A79687E2BE51AD400CFEC27 /* Tabs */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		3A7968792BE50F7900CFEC27 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		3A79687A2BE50F7E00CFEC27 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3A79687B2BE50F8100CFEC27 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C55FBB0E2BD5F679000655DE /* BlissBallApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3A79687E2BE51AD400CFEC27 /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				3A7968862BE51B3500CFEC27 /* Home */,
+				3A7968872BE51B4100CFEC27 /* BlissBall */,
+				3A7968882BE51B4D00CFEC27 /* Setting */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		3A79687F2BE51AE800CFEC27 /* Menus */ = {
+			isa = PBXGroup;
+			children = (
+				3A7968842BE51B2900CFEC27 /* TaskView.swift */,
+				3A7968892BE51B7F00CFEC27 /* SelfAffirmationView.swift */,
+				3A79688B2BE51B8F00CFEC27 /* CustomView.swift */,
+			);
+			path = Menus;
+			sourceTree = "<group>";
+		};
+		3A7968862BE51B3500CFEC27 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3A7968732BDF29C400CFEC27 /* HomeView.swift */,
+				3A79687F2BE51AE800CFEC27 /* Menus */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3A7968872BE51B4100CFEC27 /* BlissBall */ = {
+			isa = PBXGroup;
+			children = (
+				3A7968802BE51B0500CFEC27 /* BlissBallView.swift */,
+			);
+			path = BlissBall;
+			sourceTree = "<group>";
+		};
+		3A7968882BE51B4D00CFEC27 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				3A7968822BE51B1000CFEC27 /* SettingView.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		C55FBB022BD5F679000655DE = {
 			isa = PBXGroup;
 			children = (
@@ -53,9 +152,11 @@
 		C55FBB0D2BD5F679000655DE /* BlissBall */ = {
 			isa = PBXGroup;
 			children = (
-				C55FBB0E2BD5F679000655DE /* BlissBallApp.swift */,
-				C55FBB102BD5F679000655DE /* ContentView.swift */,
-				3A7968732BDF29C400CFEC27 /* HomeView.swift */,
+				3A79687B2BE50F8100CFEC27 /* App */,
+				3A79687A2BE50F7E00CFEC27 /* Core */,
+				3A7968792BE50F7900CFEC27 /* Component */,
+				3A7968782BE50F7100CFEC27 /* Feature */,
+				3A7968772BE50F6C00CFEC27 /* Model */,
 				C55FBB122BD5F67A000655DE /* Assets.xcassets */,
 				C55FBB142BD5F67A000655DE /* Preview Content */,
 			);
@@ -141,8 +242,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A7968742BDF29C400CFEC27 /* HomeView.swift in Sources */,
+				3A7968812BE51B0500CFEC27 /* BlissBallView.swift in Sources */,
 				C55FBB112BD5F679000655DE /* ContentView.swift in Sources */,
+				3A7968832BE51B1000CFEC27 /* SettingView.swift in Sources */,
+				3A79687D2BE50FB000CFEC27 /* Tab.swift in Sources */,
+				3A79688C2BE51B8F00CFEC27 /* CustomView.swift in Sources */,
+				3A7968762BE50EB700CFEC27 /* MainTabView.swift in Sources */,
 				C55FBB0F2BD5F679000655DE /* BlissBallApp.swift in Sources */,
+				3A79688A2BE51B7F00CFEC27 /* SelfAffirmationView.swift in Sources */,
+				3A7968852BE51B2900CFEC27 /* TaskView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
