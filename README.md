@@ -4,4 +4,4 @@ Technologies used: <br><br>
 ![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white)
 ![iOS](https://img.shields.io/badge/iOS/iPadOS-%2320232a.svg?style=for-the-badge&logo=ios&logoColor=white)<br><br>
 an iOSdev group proj :)<br>
-Members: Quang, Wende & Chris 
+Members: Quang Minh Nguyen, Wende Zhou & Chris (Jung Woo Choi)
