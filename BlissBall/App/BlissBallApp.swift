@@ -1,6 +1,6 @@
 //
-//  BlissBubbleApp.swift
-//  BlissBubble
+//  BlissBallApp.swift
+//  BlissBall
 //
 //  Created by Quang Minh Nguyen on 22/4/2024.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct BlissBubbleApp: App {
+struct BlissBallApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
