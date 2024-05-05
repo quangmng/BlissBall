@@ -21,14 +21,14 @@ struct MainTabView: View {
       
       BlissBallView()
         .tabItem {
-          Label("Home", systemImage: "8.circle")
+          Label("BlissBall", systemImage: "8.circle")
             .environment(\.symbolVariants, selectedTab == .blissball ? .fill : .none)
         }
         .tag(Tab.blissball)
       
       SettingView()
         .tabItem {
-          Label("Home", systemImage: "gearshape")
+          Label("Settings", systemImage: "gearshape")
             .environment(\.symbolVariants, selectedTab == .setting ? .fill : .none)
         }
         .tag(Tab.setting)
