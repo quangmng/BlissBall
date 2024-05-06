@@ -43,7 +43,7 @@ private struct MainMenusView: View {
               .frame(width: .infinity, height: .infinity)
             
             Text("Add your tasks")
-              .font(.system(size: 24))
+              .font(.system(size: 28))
               .fontWeight(.semibold)
               .padding()
           }
@@ -57,7 +57,7 @@ private struct MainMenusView: View {
               .frame(width: .infinity, height: .infinity)
             
             Text("Self-affirmations")
-              .font(.system(size: 24))
+              .font(.system(size: 28))
               .fontWeight(.semibold)
               .padding()
           }
@@ -77,8 +77,8 @@ private struct MainMenusView: View {
             VStack {
               Spacer()
               
-              Text("Customise bliss ball")
-                .font(.system(size: 24))
+              Text("Customise your ball")
+                .font(.system(size: 28))
                 .fontWeight(.semibold)
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .bottomLeading)
