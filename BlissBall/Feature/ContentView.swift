@@ -47,7 +47,7 @@ struct ContentView: View {
         }
     }
 }
-
+// Consider either keeping this on a seperate file or remove. (recommend to keep, for ball customisation easiness)
 struct LuckyBall: View {
   var body: some View {
     Circle()

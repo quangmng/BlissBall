@@ -9,40 +9,43 @@ import SwiftUI
 
 struct TaskView: View {
     //Declare array/write to file to store tasks as a list
-    @State var tasks: [String] = [""]
+    @State var tasks: [String] = []
     @State private var searchEntry = ""
     
     var body: some View {
         NavigationStack{
             
-            List {
+            List{
+                Section{
                 ForEach(searchResults, id: \.self) { task in
                     Text(task)
                 }
                 .onDelete(perform: delete)
             }
             
-            .safeAreaInset(edge: .bottom, alignment: .trailing){
                 HStack{
-                    Button(action: {},
-                           label: {
-                        Image(systemName:"plus.circle.fill")
-                        Text("Add task")
-                        
+                    Button(action: {
+                      //Add another item into list
+                    },label: {
+                        HStack{
+                            Image(systemName:"plus.circle.fill")
+                            Text("Add task")
+                        }
                     })
                     .font(.system(size: 18))
-                    .padding(.top, 10)
+                    
                 }
-                Spacer().frame(height: 20)
-            }
+        }
             
             .toolbar{
                 EditButton()
             }
+            
             .navigationTitle("Your Tasks")
+            
         }
         .searchable(text: $searchEntry)
-        
+
     }
 
     
