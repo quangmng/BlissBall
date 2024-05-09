@@ -18,6 +18,18 @@ struct SelfAffirmationView: View {
                     Text(affirmation)
                 }
                 .onDelete(perform: delete)
+                HStack{
+                    Button(action: {
+                      //Add another item into list
+                    },label: {
+                        HStack{
+                            Image(systemName:"plus.circle.fill")
+                            Text("Add task")
+                        }
+                    })
+                    .font(.system(size: 18))
+                    
+                }
             }
             .toolbar {
                 EditButton()

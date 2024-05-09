@@ -10,8 +10,11 @@ import SwiftUI
 struct CustomView: View {
     var body: some View {
         NavigationStack{
-            Text("")
+            VStack{
+                Text("Ball goes here")
                 .navigationTitle("Customise your ball")
+                
+            }
         }
     }
 }

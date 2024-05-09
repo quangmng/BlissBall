@@ -39,6 +39,7 @@ private struct MainMenusView: View {
         NavigationLink(destination: TaskView()) {
           ZStack(alignment: .bottomLeading) {
             Image("menuImg1")
+
               .resizable()
               .frame(width: .infinity, height: .infinity)
             

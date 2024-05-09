@@ -16,12 +16,10 @@ struct TaskView: View {
         NavigationStack{
             
             List{
-                Section{
                 ForEach(searchResults, id: \.self) { task in
                     Text(task)
                 }
                 .onDelete(perform: delete)
-            }
             
                 HStack{
                     Button(action: {
