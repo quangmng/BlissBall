@@ -3,7 +3,7 @@
 //  BlissBubble
 //
 //  Created by JungWoo Choi on 3/5/2024.
-//
+//	 Modified a little bit by Wende Zhou on 10/5/2024
 
 import SwiftUI
 
@@ -11,30 +11,30 @@ struct TaskView: View {
     //Declare array/write to file to store tasks as a list
     @State var tasks: [String] = []
     @State private var searchEntry = ""
+	@State private var newTask = ""
     
     var body: some View {
-        NavigationStack{
-            
+		NavigationStack{
             List{
                 ForEach(searchResults, id: \.self) { task in
                     Text(task)
                 }
                 .onDelete(perform: delete)
-            
-                HStack{
-                    Button(action: {
-                      //Add another item into list
-                    },label: {
-                        HStack{
-                            Image(systemName:"plus.circle.fill")
-                            Text("Add task")
-                        }
-                    })
-                    .font(.system(size: 18))
-                    
-                }
         }
-            
+			HStack(alignment:.center, spacing: 240) {
+				Button(action: {
+					
+				}, label:{
+					HStack{
+						Image(systemName: "plus.circle.fill")
+						Text("Add task")
+						Spacer()
+							.frame(width: 230)
+					}
+				})
+				.font(.system(size: 20))
+			
+			}
             .toolbar{
                 EditButton()
             }
@@ -65,3 +65,4 @@ struct TaskView: View {
 #Preview {
     TaskView()
 }
+
