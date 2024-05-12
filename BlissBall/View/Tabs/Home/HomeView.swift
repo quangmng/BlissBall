@@ -52,7 +52,7 @@ private struct MainMenusView: View {
           .frame(width: .infinity, height: 200)
         }
         
-        NavigationLink(destination: SelfAffirmationView()) {
+        NavigationLink(destination: SelfAffirmationListView()) {
           ZStack(alignment: .bottomLeading) {
             Image("menuImg2")
               .resizable()

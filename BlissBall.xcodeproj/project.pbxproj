@@ -15,13 +15,16 @@
 		3A7738942BF16C0600DC0BEA /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7738932BF16C0600DC0BEA /* TaskView.swift */; };
 		3A7738962BF16DEC00DC0BEA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7738952BF16DEC00DC0BEA /* Task.swift */; };
 		3A77389B2BF16F1900DC0BEA /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A77389A2BF16F1900DC0BEA /* TaskListViewModel.swift */; };
+		3A77389E2BF174E900DC0BEA /* SelfAffirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A77389D2BF174E900DC0BEA /* SelfAffirmationView.swift */; };
+		3A7738A02BF175F200DC0BEA /* Affirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A77389F2BF175F200DC0BEA /* Affirmation.swift */; };
+		3A7738A32BF1767E00DC0BEA /* SelfAffiramtionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7738A22BF1767D00DC0BEA /* SelfAffiramtionListViewModel.swift */; };
 		3A7968742BDF29C400CFEC27 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968732BDF29C400CFEC27 /* HomeView.swift */; };
 		3A7968762BE50EB700CFEC27 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968752BE50EB700CFEC27 /* MainTabView.swift */; };
 		3A79687D2BE50FB000CFEC27 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A79687C2BE50FB000CFEC27 /* Tab.swift */; };
 		3A7968812BE51B0500CFEC27 /* BlissBallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968802BE51B0500CFEC27 /* BlissBallView.swift */; };
 		3A7968832BE51B1000CFEC27 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968822BE51B1000CFEC27 /* SettingView.swift */; };
 		3A7968852BE51B2900CFEC27 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968842BE51B2900CFEC27 /* TaskListView.swift */; };
-		3A79688A2BE51B7F00CFEC27 /* SelfAffirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968892BE51B7F00CFEC27 /* SelfAffirmationView.swift */; };
+		3A79688A2BE51B7F00CFEC27 /* SelfAffirmationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968892BE51B7F00CFEC27 /* SelfAffirmationListView.swift */; };
 		3A79688C2BE51B8F00CFEC27 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A79688B2BE51B8F00CFEC27 /* CustomView.swift */; };
 		C55FBB0F2BD5F679000655DE /* BlissBallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55FBB0E2BD5F679000655DE /* BlissBallApp.swift */; };
 		C55FBB112BD5F679000655DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55FBB102BD5F679000655DE /* ContentView.swift */; };
@@ -39,13 +42,16 @@
 		3A7738932BF16C0600DC0BEA /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		3A7738952BF16DEC00DC0BEA /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		3A77389A2BF16F1900DC0BEA /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		3A77389D2BF174E900DC0BEA /* SelfAffirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfAffirmationView.swift; sourceTree = "<group>"; };
+		3A77389F2BF175F200DC0BEA /* Affirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Affirmation.swift; sourceTree = "<group>"; };
+		3A7738A22BF1767D00DC0BEA /* SelfAffiramtionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfAffiramtionListViewModel.swift; sourceTree = "<group>"; };
 		3A7968732BDF29C400CFEC27 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3A7968752BE50EB700CFEC27 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		3A79687C2BE50FB000CFEC27 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		3A7968802BE51B0500CFEC27 /* BlissBallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlissBallView.swift; sourceTree = "<group>"; };
 		3A7968822BE51B1000CFEC27 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		3A7968842BE51B2900CFEC27 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
-		3A7968892BE51B7F00CFEC27 /* SelfAffirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfAffirmationView.swift; sourceTree = "<group>"; };
+		3A7968892BE51B7F00CFEC27 /* SelfAffirmationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfAffirmationListView.swift; sourceTree = "<group>"; };
 		3A79688B2BE51B8F00CFEC27 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		C55FBB0B2BD5F679000655DE /* BlissBubble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlissBubble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C55FBB0E2BD5F679000655DE /* BlissBallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlissBallApp.swift; sourceTree = "<group>"; };
@@ -136,6 +142,7 @@
 		3A7738982BF16F0300DC0BEA /* Menus */ = {
 			isa = PBXGroup;
 			children = (
+				3A7738A12BF1766900DC0BEA /* SelfAffirmation */,
 				3A7738992BF16F0B00DC0BEA /* Tasks */,
 			);
 			path = Menus;
@@ -149,11 +156,29 @@
 			path = Tasks;
 			sourceTree = "<group>";
 		};
+		3A77389C2BF174AC00DC0BEA /* SelfAffirmation */ = {
+			isa = PBXGroup;
+			children = (
+				3A77389D2BF174E900DC0BEA /* SelfAffirmationView.swift */,
+				3A7968892BE51B7F00CFEC27 /* SelfAffirmationListView.swift */,
+			);
+			path = SelfAffirmation;
+			sourceTree = "<group>";
+		};
+		3A7738A12BF1766900DC0BEA /* SelfAffirmation */ = {
+			isa = PBXGroup;
+			children = (
+				3A7738A22BF1767D00DC0BEA /* SelfAffiramtionListViewModel.swift */,
+			);
+			path = SelfAffirmation;
+			sourceTree = "<group>";
+		};
 		3A7968772BE50F6C00CFEC27 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				3A79687C2BE50FB000CFEC27 /* Tab.swift */,
 				3A7738952BF16DEC00DC0BEA /* Task.swift */,
+				3A77389F2BF175F200DC0BEA /* Affirmation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,7 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				3A7738922BF16BED00DC0BEA /* Tasks */,
-				3A7968892BE51B7F00CFEC27 /* SelfAffirmationView.swift */,
+				3A77389C2BF174AC00DC0BEA /* SelfAffirmation */,
 				3A79688B2BE51B8F00CFEC27 /* CustomView.swift */,
 				FDA333F62BEDF34B0024A0D6 /* TaskView_another.swift */,
 			);
@@ -341,16 +366,19 @@
 				3A7738912BF0F89000DC0BEA /* ShakeNotification.swift in Sources */,
 				3A79687D2BE50FB000CFEC27 /* Tab.swift in Sources */,
 				3A79688C2BE51B8F00CFEC27 /* CustomView.swift in Sources */,
+				3A77389E2BF174E900DC0BEA /* SelfAffirmationView.swift in Sources */,
 				3A7968762BE50EB700CFEC27 /* MainTabView.swift in Sources */,
 				C55FBB0F2BD5F679000655DE /* BlissBallApp.swift in Sources */,
 				3A7738942BF16C0600DC0BEA /* TaskView.swift in Sources */,
-				3A79688A2BE51B7F00CFEC27 /* SelfAffirmationView.swift in Sources */,
+				3A79688A2BE51B7F00CFEC27 /* SelfAffirmationListView.swift in Sources */,
 				3A7968852BE51B2900CFEC27 /* TaskListView.swift in Sources */,
 				3A77388B2BF0EE8A00DC0BEA /* CustomBlissBallViewModel.swift in Sources */,
+				3A7738A02BF175F200DC0BEA /* Affirmation.swift in Sources */,
 				3A7738872BF0EDE600DC0BEA /* CustomColorPickerView.swift in Sources */,
 				3A7738842BF0ED0400DC0BEA /* CustomBlissBallView.swift in Sources */,
 				3A7738962BF16DEC00DC0BEA /* Task.swift in Sources */,
 				FDA333F72BEDF34B0024A0D6 /* TaskView_another.swift in Sources */,
+				3A7738A32BF1767E00DC0BEA /* SelfAffiramtionListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
