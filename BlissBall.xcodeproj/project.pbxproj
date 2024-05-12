@@ -11,6 +11,7 @@
 		3A7738872BF0EDE600DC0BEA /* CustomColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7738862BF0EDE600DC0BEA /* CustomColorPickerView.swift */; };
 		3A77388B2BF0EE8A00DC0BEA /* CustomBlissBallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A77388A2BF0EE8A00DC0BEA /* CustomBlissBallViewModel.swift */; };
 		3A77388E2BF0F41200DC0BEA /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A77388D2BF0F41200DC0BEA /* AboutView.swift */; };
+		3A7738912BF0F89000DC0BEA /* ShakeNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7738902BF0F89000DC0BEA /* ShakeNotification.swift */; };
 		3A7968742BDF29C400CFEC27 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968732BDF29C400CFEC27 /* HomeView.swift */; };
 		3A7968762BE50EB700CFEC27 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968752BE50EB700CFEC27 /* MainTabView.swift */; };
 		3A79687D2BE50FB000CFEC27 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A79687C2BE50FB000CFEC27 /* Tab.swift */; };
@@ -31,6 +32,7 @@
 		3A7738862BF0EDE600DC0BEA /* CustomColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorPickerView.swift; sourceTree = "<group>"; };
 		3A77388A2BF0EE8A00DC0BEA /* CustomBlissBallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBlissBallViewModel.swift; sourceTree = "<group>"; };
 		3A77388D2BF0F41200DC0BEA /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		3A7738902BF0F89000DC0BEA /* ShakeNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeNotification.swift; sourceTree = "<group>"; };
 		3A7968732BDF29C400CFEC27 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3A7968752BE50EB700CFEC27 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		3A79687C2BE50FB000CFEC27 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
@@ -99,6 +101,14 @@
 			path = About;
 			sourceTree = "<group>";
 		};
+		3A77388F2BF0F87E00DC0BEA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3A7738902BF0F89000DC0BEA /* ShakeNotification.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		3A7968772BE50F6C00CFEC27 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +131,7 @@
 		3A79687B2BE50F8100CFEC27 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				3A77388F2BF0F87E00DC0BEA /* Service */,
 				C55FBB0E2BD5F679000655DE /* BlissBallApp.swift */,
 			);
 			path = App;
@@ -285,6 +296,7 @@
 				C55FBB112BD5F679000655DE /* ContentView.swift in Sources */,
 				3A7968832BE51B1000CFEC27 /* SettingView.swift in Sources */,
 				3A77388E2BF0F41200DC0BEA /* AboutView.swift in Sources */,
+				3A7738912BF0F89000DC0BEA /* ShakeNotification.swift in Sources */,
 				3A79687D2BE50FB000CFEC27 /* Tab.swift in Sources */,
 				3A79688C2BE51B8F00CFEC27 /* CustomView.swift in Sources */,
 				3A7968762BE50EB700CFEC27 /* MainTabView.swift in Sources */,

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
   let userName: String = "User1"
+  
   var body: some View {
     NavigationStack {
       MainMenusView(userName: userName)
@@ -40,7 +41,6 @@ private struct MainMenusView: View {
         NavigationLink(destination: TaskView()) {
           ZStack(alignment: .bottomLeading) {
             Image("menuImg1")
-
               .resizable()
               .frame(width: .infinity, height: .infinity)
             
@@ -88,7 +88,6 @@ private struct MainMenusView: View {
           }
           .frame(width: .infinity, height: 200)
         }
-
       }
       .foregroundStyle(.white)
       .scrollIndicators(.hidden)

@@ -34,17 +34,13 @@ struct TaskView: View {
           }
         }
         .font(.system(size: 20))
-        
       }
       .toolbar{
         EditButton()
       }
-      
       .navigationTitle("Your Tasks")
-      
     }
     .searchable(text: $searchEntry)
-    
   }
   
   
