@@ -13,6 +13,7 @@ struct BlissBallView: View {
             Text("*Ball goes in this screen*")
             Text("Shake phone or swipe across ball to activate")
                 .font(.title)
+          
             .navigationTitle("BlissBall")
         }
     }
