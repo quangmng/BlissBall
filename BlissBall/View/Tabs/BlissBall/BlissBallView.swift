@@ -9,6 +9,7 @@ import SwiftUI
 
 struct BlissBallView: View {
   @EnvironmentObject var customBlissBallViewModel: CustomBlissBallViewModel
+  @StateObject var viewModel = BlissBallViewModel()
   
   @State private var isAppear = false
   
@@ -16,7 +17,8 @@ struct BlissBallView: View {
     NavigationStack {
       VStack {
         Button {
-          isAppear.toggle()
+            viewModel.fetchData()
+            isAppear = true
         } label: {
           CustomBlissBallView()
             .environmentObject(customBlissBallViewModel)
@@ -24,7 +26,12 @@ struct BlissBallView: View {
         .padding(.bottom, 16)
         
         if isAppear {
-          
+          VStack {
+            Text(viewModel.quoteData?.quote ?? "Do something to move yourself toward your major goal every day.")
+              .font(.system(size: 16))
+              .fontWeight(.semibold)
+            Text(viewModel.quoteData?.author ?? "")
+          }
         } else {
           Text("Shake phone or tap the ball to activate!")
             .font(.system(size: 24))
@@ -35,6 +42,7 @@ struct BlissBallView: View {
       .navigationTitle("BlissBall")
     }
     .onReceive(NotificationCenter.default.publisher(for: .deviceDidShakeNotification)) { _ in
+      viewModel.fetchData()
       isAppear = true
     }
   }
