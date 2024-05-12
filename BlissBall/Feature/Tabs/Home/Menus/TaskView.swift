@@ -16,24 +16,40 @@ struct TaskView: View {
     var body: some View {
 		NavigationStack{
             List{
+        Section {
+                            TextField("New Task", text: $newTask, prompt: Text("Enter a new task"))
+                        }
                 ForEach(searchResults, id: \.self) { task in
                     Text(task)
                 }
                 .onDelete(perform: delete)
         }
-			HStack(alignment:.center, spacing: 240) {
+            
+            .safeAreaInset(edge: .bottom, alignment: .leading) {
+                
+                
+                
 				Button(action: {
-					
+                    if !newTask.isEmpty {
+                        tasks.append(newTask)
+                        newTask = ""
+                    }
 				}, label:{
 					HStack{
 						Image(systemName: "plus.circle.fill")
 						Text("Add task")
+                        
 						Spacer()
-							.frame(width: 230)
+                            .frame(maxWidth: 2)
 					}
+                    .font(.system(size: 20))
+                    .padding(8)
 				})
-				.font(.system(size: 20))
-			
+                .padding()
+				
+                .buttonStyle(.borderedProminent)
+                
+
 			}
             .toolbar{
                 EditButton()
