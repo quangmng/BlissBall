@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MainTabView: View {
+  @EnvironmentObject var customBlissBallViewModel: CustomBlissBallViewModel
+  
   @State var selectedTab: Tab = .home
   
   var body: some View {
@@ -40,4 +42,5 @@ struct MainTabView: View {
 
 #Preview {
   MainTabView()
+    .environmentObject(CustomBlissBallViewModel())
 }

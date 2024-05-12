@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+  @StateObject var customBlissBallViewModel = CustomBlissBallViewModel()
+  
   var body: some View {
     NavigationView {
       VStack {
@@ -19,16 +21,12 @@ struct ContentView: View {
         
         Spacer()
         
-        //          ZStack {
-        //            LuckyBall()
-        //          }
-        
         NavigationLink {
           MainTabView()
+            .environmentObject(customBlissBallViewModel)
         } label: {
-          Image("blissball")
-            .resizable()
-            .frame(width: 280, height: 280)
+          CustomBlissBallView()
+            .environmentObject(customBlissBallViewModel)
         }
         
         Text("Tap Ball to Begin")

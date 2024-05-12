@@ -12,21 +12,21 @@ struct SelfAffirmationView: View {
     @State private var searchEntry = ""
     
     var body: some View {
-        NavigationStack{
+        NavigationStack {
             List {
                 ForEach(searchResults, id: \.self) { affirmation in
                     Text(affirmation)
                 }
                 .onDelete(perform: delete)
                 HStack{
-                    Button(action: {
+                    Button {
                       //Add another item into list
-                    },label: {
-                        HStack{
+                    } label: {
+                        HStack {
                             Image(systemName:"plus.circle.fill")
                             Text("Add task")
                         }
-                    })
+                    }
                     .font(.system(size: 18))
                     
                 }
@@ -48,6 +48,7 @@ struct SelfAffirmationView: View {
             return affirmations.filter { $0.contains(searchEntry) }
         }
     }
+  
     func delete(at offsets: IndexSet) {
             affirmations.remove(atOffsets: offsets)
         }

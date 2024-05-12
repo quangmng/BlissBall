@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A7738842BF0ED0400DC0BEA /* CustomBlissBallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7738832BF0ED0400DC0BEA /* CustomBlissBallView.swift */; };
+		3A7738872BF0EDE600DC0BEA /* CustomColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7738862BF0EDE600DC0BEA /* CustomColorPickerView.swift */; };
+		3A77388B2BF0EE8A00DC0BEA /* CustomBlissBallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A77388A2BF0EE8A00DC0BEA /* CustomBlissBallViewModel.swift */; };
+		3A77388E2BF0F41200DC0BEA /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A77388D2BF0F41200DC0BEA /* AboutView.swift */; };
 		3A7968742BDF29C400CFEC27 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968732BDF29C400CFEC27 /* HomeView.swift */; };
 		3A7968762BE50EB700CFEC27 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968752BE50EB700CFEC27 /* MainTabView.swift */; };
 		3A79687D2BE50FB000CFEC27 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A79687C2BE50FB000CFEC27 /* Tab.swift */; };
@@ -23,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A7738832BF0ED0400DC0BEA /* CustomBlissBallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBlissBallView.swift; sourceTree = "<group>"; };
+		3A7738862BF0EDE600DC0BEA /* CustomColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColorPickerView.swift; sourceTree = "<group>"; };
+		3A77388A2BF0EE8A00DC0BEA /* CustomBlissBallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBlissBallViewModel.swift; sourceTree = "<group>"; };
+		3A77388D2BF0F41200DC0BEA /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		3A7968732BDF29C400CFEC27 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		3A7968752BE50EB700CFEC27 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		3A79687C2BE50FB000CFEC27 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
@@ -50,6 +58,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A7738812BF0E1C100DC0BEA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3A7738892BF0EE7500DC0BEA /* Custom */,
+				3A7738882BF0EE7100DC0BEA /* Tabs */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3A7738852BF0EDB500DC0BEA /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				3A7738832BF0ED0400DC0BEA /* CustomBlissBallView.swift */,
+				3A7738862BF0EDE600DC0BEA /* CustomColorPickerView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		3A7738882BF0EE7100DC0BEA /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		3A7738892BF0EE7500DC0BEA /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				3A77388A2BF0EE8A00DC0BEA /* CustomBlissBallViewModel.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		3A77388C2BF0F40400DC0BEA /* About */ = {
+			isa = PBXGroup;
+			children = (
+				3A77388D2BF0F41200DC0BEA /* AboutView.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
 		3A7968772BE50F6C00CFEC27 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +107,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		3A7968782BE50F7100CFEC27 /* Feature */ = {
+		3A7968782BE50F7100CFEC27 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3A7738852BF0EDB500DC0BEA /* Custom */,
+				3A79687E2BE51AD400CFEC27 /* Tabs */,
 				C55FBB102BD5F679000655DE /* ContentView.swift */,
 				3A7968752BE50EB700CFEC27 /* MainTabView.swift */,
-				3A79687E2BE51AD400CFEC27 /* Tabs */,
 			);
-			path = Feature;
+			path = View;
 			sourceTree = "<group>";
 		};
 		3A79687B2BE50F8100CFEC27 /* App */ = {
@@ -117,6 +167,7 @@
 		3A7968882BE51B4D00CFEC27 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				3A77388C2BF0F40400DC0BEA /* About */,
 				3A7968822BE51B1000CFEC27 /* SettingView.swift */,
 			);
 			path = Setting;
@@ -142,8 +193,9 @@
 			isa = PBXGroup;
 			children = (
 				3A79687B2BE50F8100CFEC27 /* App */,
-				3A7968782BE50F7100CFEC27 /* Feature */,
 				3A7968772BE50F6C00CFEC27 /* Model */,
+				3A7968782BE50F7100CFEC27 /* View */,
+				3A7738812BF0E1C100DC0BEA /* ViewModel */,
 				C55FBB122BD5F67A000655DE /* Assets.xcassets */,
 				C55FBB142BD5F67A000655DE /* Preview Content */,
 			);
@@ -232,12 +284,16 @@
 				3A7968812BE51B0500CFEC27 /* BlissBallView.swift in Sources */,
 				C55FBB112BD5F679000655DE /* ContentView.swift in Sources */,
 				3A7968832BE51B1000CFEC27 /* SettingView.swift in Sources */,
+				3A77388E2BF0F41200DC0BEA /* AboutView.swift in Sources */,
 				3A79687D2BE50FB000CFEC27 /* Tab.swift in Sources */,
 				3A79688C2BE51B8F00CFEC27 /* CustomView.swift in Sources */,
 				3A7968762BE50EB700CFEC27 /* MainTabView.swift in Sources */,
 				C55FBB0F2BD5F679000655DE /* BlissBallApp.swift in Sources */,
 				3A79688A2BE51B7F00CFEC27 /* SelfAffirmationView.swift in Sources */,
 				3A7968852BE51B2900CFEC27 /* TaskView.swift in Sources */,
+				3A77388B2BF0EE8A00DC0BEA /* CustomBlissBallViewModel.swift in Sources */,
+				3A7738872BF0EDE600DC0BEA /* CustomColorPickerView.swift in Sources */,
+				3A7738842BF0ED0400DC0BEA /* CustomBlissBallView.swift in Sources */,
 				FDA333F72BEDF34B0024A0D6 /* TaskView_another.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
