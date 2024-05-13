@@ -1,0 +1,7 @@
+{
+ "Simulator Target Bundle": "au.quang.BlissBall",
+ "aps": {
+     "alert": "How are you feeling now? Check-in with us!",
+     "sound": "default"
+ }
+}
