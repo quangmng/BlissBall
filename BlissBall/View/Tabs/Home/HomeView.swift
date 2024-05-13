@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
+  @EnvironmentObject var customBlissBallViewModel: CustomBlissBallViewModel
+  
   let userName: String = "User1"
   
   var body: some View {
@@ -25,6 +27,8 @@ struct HomeView: View {
 
 //MARK: - MainMenusView
 private struct MainMenusView: View {
+  @EnvironmentObject var customBlissBallViewModel: CustomBlissBallViewModel
+  
   let userName: String
   
   fileprivate var body: some View {
@@ -66,7 +70,7 @@ private struct MainMenusView: View {
           .frame(width: .infinity, height: 200)
         }
         
-        NavigationLink(destination: CustomView()) {
+        NavigationLink(destination: CustomView().environmentObject(customBlissBallViewModel)) {
           ZStack {
             Rectangle()
               .foregroundStyle(.gray)
@@ -97,4 +101,5 @@ private struct MainMenusView: View {
 
 #Preview {
   HomeView()
+    .environmentObject(CustomBlissBallViewModel())
 }

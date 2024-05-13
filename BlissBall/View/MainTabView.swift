@@ -15,6 +15,7 @@ struct MainTabView: View {
   var body: some View {
     TabView(selection: $selectedTab) {
       HomeView()
+        .environmentObject(customBlissBallViewModel)
         .tabItem {
           Label("Home", systemImage: "house")
             .environment(\.symbolVariants, selectedTab == .home ? .fill : .none)

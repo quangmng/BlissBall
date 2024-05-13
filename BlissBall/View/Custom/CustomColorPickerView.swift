@@ -7,15 +7,6 @@
 
 import SwiftUI
 
-var sampleColorList: [Color] = [
-  .black,
-  .red,
-  .green,
-  .yellow,
-  .blue,
-  .brown
-]
-
 struct CustomColorPickerView: View {
   @EnvironmentObject var viewModel: CustomBlissBallViewModel
   
