@@ -9,6 +9,7 @@ import SwiftUI
 
 var sampleColorList: [Color] = [
   .black,
+  .white,
   .red,
   .green,
   .yellow,
@@ -30,7 +31,7 @@ struct CustomView: View {
         VStack(alignment: .leading) {
           HStack {
             Text("exterior".uppercased())
-            
+                  .opacity(0.5)
             Spacer()
           }
           
@@ -41,9 +42,12 @@ struct CustomView: View {
                   viewModel.extColor = color
                 } label: {
                   Rectangle()
+                    
                     .fill(color)
+                    
                     .frame(width: 48, height: 48)
                     .clipShape(.buttonBorder)
+                    
                 }
               }
             }
@@ -54,8 +58,8 @@ struct CustomView: View {
           
         VStack(alignment: .leading) {
           HStack {
-            Text("CENTRE \"8\"".uppercased())
-            
+            Text("centre \"8\"".uppercased())
+                  .opacity(0.5)
             Spacer()
           }
           
@@ -80,7 +84,7 @@ struct CustomView: View {
         VStack(alignment: .leading) {
           HStack {
             Text("filling".uppercased())
-            
+                  .opacity(0.5)
             Spacer()
           }
           

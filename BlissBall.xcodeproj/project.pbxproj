@@ -31,6 +31,7 @@
 		3A79688A2BE51B7F00CFEC27 /* SelfAffirmationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968892BE51B7F00CFEC27 /* SelfAffirmationListView.swift */; };
 		3A79688C2BE51B8F00CFEC27 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A79688B2BE51B8F00CFEC27 /* CustomView.swift */; };
 		C54394342BF1B8CE009714D6 /* checkinNotif.apns in Resources */ = {isa = PBXBuildFile; fileRef = C54394332BF1B8CE009714D6 /* checkinNotif.apns */; };
+		C543943F2BF1EBA4009714D6 /* chime.AIFF in Resources */ = {isa = PBXBuildFile; fileRef = C543943E2BF1EBA4009714D6 /* chime.AIFF */; };
 		C55FBB0F2BD5F679000655DE /* BlissBallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55FBB0E2BD5F679000655DE /* BlissBallApp.swift */; };
 		C55FBB112BD5F679000655DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55FBB102BD5F679000655DE /* ContentView.swift */; };
 		C55FBB132BD5F67A000655DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55FBB122BD5F67A000655DE /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 		3A7968892BE51B7F00CFEC27 /* SelfAffirmationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfAffirmationListView.swift; sourceTree = "<group>"; };
 		3A79688B2BE51B8F00CFEC27 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		C54394332BF1B8CE009714D6 /* checkinNotif.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = checkinNotif.apns; path = BlissBall/checkinNotif.apns; sourceTree = "<group>"; };
+		C543943E2BF1EBA4009714D6 /* chime.AIFF */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = chime.AIFF; sourceTree = "<group>"; };
 		C55FBB0B2BD5F679000655DE /* BlissBubble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlissBubble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C55FBB0E2BD5F679000655DE /* BlissBallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlissBallApp.swift; sourceTree = "<group>"; };
 		C55FBB102BD5F679000655DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -269,6 +271,14 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
+		C54394402BF1EE2B009714D6 /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				C543943E2BF1EBA4009714D6 /* chime.AIFF */,
+			);
+			path = audio;
+			sourceTree = "<group>";
+		};
 		C55FBB022BD5F679000655DE = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +299,7 @@
 		C55FBB0D2BD5F679000655DE /* BlissBall */ = {
 			isa = PBXGroup;
 			children = (
+				C54394402BF1EE2B009714D6 /* audio */,
 				3A79687B2BE50F8100CFEC27 /* App */,
 				3A7968772BE50F6C00CFEC27 /* Model */,
 				3A7968782BE50F7100CFEC27 /* View */,
@@ -323,6 +334,8 @@
 			dependencies = (
 			);
 			name = BlissBubble;
+			packageProductDependencies = (
+			);
 			productName = BlissBubble;
 			productReference = C55FBB0B2BD5F679000655DE /* BlissBubble.app */;
 			productType = "com.apple.product-type.application";
@@ -351,6 +364,8 @@
 				Base,
 			);
 			mainGroup = C55FBB022BD5F679000655DE;
+			packageReferences = (
+			);
 			productRefGroup = C55FBB0C2BD5F679000655DE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -365,6 +380,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C543943F2BF1EBA4009714D6 /* chime.AIFF in Resources */,
 				C54394342BF1B8CE009714D6 /* checkinNotif.apns in Resources */,
 				C55FBB162BD5F67A000655DE /* Preview Assets.xcassets in Resources */,
 				C55FBB132BD5F67A000655DE /* Assets.xcassets in Resources */,

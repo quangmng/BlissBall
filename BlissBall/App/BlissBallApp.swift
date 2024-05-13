@@ -22,8 +22,8 @@ struct BlissBallApp: App {
 class AppDelegate: NSObject, UIApplicationDelegate {
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-    
     registerForPushNotifications()
+      local4pmNotifs()
     return true
   }
   
@@ -36,4 +36,31 @@ class AppDelegate: NSObject, UIApplicationDelegate {
       }
   }
   
+}
+// MARK: - Local Checkin Notifs
+func local4pmNotifs() {
+    let identifier = "daily-check-in"
+    let title = "Your Daily Check-in!"
+    let body = "How are you feeling now? Check-in with us!"
+    let hour = 16
+    let minutes = 0
+    let isDaily = true
+    
+    let notificationCentre = UNUserNotificationCenter.current()
+    
+    let content = UNMutableNotificationContent()
+    content.title = title
+    content.body = body
+    content.sound = .default
+    
+    let calendar = Calendar.current
+    var date = DateComponents(calendar: calendar, timeZone: TimeZone.current)
+    date.hour = hour
+    date.minute = minutes
+    
+    let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: isDaily)
+    let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+    
+    notificationCentre.removePendingNotificationRequests(withIdentifiers: [identifier])
+    notificationCentre.add(request)
 }

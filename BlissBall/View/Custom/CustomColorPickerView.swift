@@ -29,7 +29,9 @@ struct CustomColorPickerView: View {
               viewModel.extColor = color
             } label: {
               Rectangle()
+                
                 .fill(color)
+                .stroke(.gray, lineWidth: 10)
                 .frame(width: 48, height: 48)
                 .clipShape(.buttonBorder)
             }
