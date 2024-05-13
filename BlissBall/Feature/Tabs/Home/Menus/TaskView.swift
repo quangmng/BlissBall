@@ -12,9 +12,9 @@ struct TaskView: View {
     @State var tasks: [String] = []
     @State private var searchEntry = ""
 	@State private var newTask = ""
-    
+    @EnvironmentObject var tabVM: TabViewModel
     var body: some View {
-		NavigationStack{
+		NavigationView{
             List{
         Section {
                             TextField("New Task", text: $newTask, prompt: Text("Enter a new task"))
@@ -59,7 +59,14 @@ struct TaskView: View {
             
         }
         .searchable(text: $searchEntry)
-
+        // Whenever TaskView appears, hide the TabView
+            .onAppear {
+                tabVM.isTabViewVisible = false
+            }
+            // When TaskView disappears, show the TabView
+            .onDisappear {
+                tabVM.isTabViewVisible = true
+            }
     }
 
     
@@ -75,10 +82,21 @@ struct TaskView: View {
     func delete(at offsets: IndexSet) {
             tasks.remove(atOffsets: offsets)
         }
+    struct TaskView_Previews: PreviewProvider {
+        static var previews: some View {
+            // Create an instance of the TabViewModel
+            let tabViewModel = TabViewModel()
+
+            TaskView()
+                // Provide the instance to the TaskView environment
+                .environmentObject(tabViewModel)
+        }
+    }
 }
 
 
-#Preview {
-    TaskView()
-}
+
+
+
+
 

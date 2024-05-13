@@ -49,7 +49,7 @@ private struct MainMenusView: View {
               .fontWeight(.semibold)
               .padding()
           }
-          .frame(width: .infinity, height: 200)
+          //.frame(width: .infinity, height: 200)
         }
         
         NavigationLink(destination: SelfAffirmationView()) {

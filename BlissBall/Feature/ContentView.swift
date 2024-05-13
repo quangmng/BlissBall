@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+  @StateObject var tabVM = TabViewModel()
+  @State private var showingTaskView = false
   var body: some View {
     NavigationView {
       VStack {
@@ -19,12 +21,8 @@ struct ContentView: View {
         
         Spacer()
         
-        //          ZStack {
-        //            LuckyBall()
-        //          }
-        
         NavigationLink {
-          MainTabView()
+          MainTabView().environmentObject(tabVM)
         } label: {
           Image("blissball")
             .resizable()

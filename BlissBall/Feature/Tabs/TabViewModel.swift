@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-struct TabViewModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    TabViewModel()
+class TabViewModel: ObservableObject {
+    @Published var isTabViewVisible: Bool = true
 }

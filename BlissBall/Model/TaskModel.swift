@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct TaskModel: Codable{
+    var task: String
+    var affirmation: String
+}
+
+struct TasksModel: Codable{
+    var tasks: [TaskModel]
+}

@@ -51,18 +51,16 @@ struct SettingView: View {
             .navigationTitle("Settings")
         }
         
-        HStack{
-          //.alert "are you sure to clear out all your tasks and self-affirmations?" - option 1 Delete - option 2 Cancel
-          Text("Clear All User Entries")
-            .foregroundStyle(.red)
-        }
+//        HStack{
+//          //.alert "are you sure to clear out all your tasks and self-affirmations?" - option 1 Delete - option 2 Cancel
+//          Text("Clear All User Entries")
+//            .foregroundStyle(.red)
+//        }
+        .navigationTitle("Settings")
       }
-      
-      .navigationTitle("Settings")
     }
     
-  }
-}
+
 
 #Preview {
   SettingView()
