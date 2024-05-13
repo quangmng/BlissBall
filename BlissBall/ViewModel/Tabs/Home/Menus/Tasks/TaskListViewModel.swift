@@ -8,14 +8,14 @@
 import Foundation
 
 class TaskListViewModel: ObservableObject {
-  @Published var tasks: [Task]
-  @Published var removeTasks: [Task]
+  @Published var tasks: [BlissTask]
+  @Published var removeTasks: [BlissTask]
   @Published var searchEntry: String
   @Published var newTask: String
   
   init(
-    tasks: [Task] = [],
-    removeTasks: [Task] = [],
+    tasks: [BlissTask] = [],
+    removeTasks: [BlissTask] = [],
     searchEntry: String = "",
     newTask: String = ""
   ) {
@@ -26,7 +26,7 @@ class TaskListViewModel: ObservableObject {
   }
   
   // Add func for adding item into the taskList
-  var searchResults: [Task] {
+  var searchResults: [BlissTask] {
     guard !searchEntry.isEmpty else { return tasks }
     return tasks.filter { task in
       task.title.lowercased().contains(searchEntry.lowercased())
@@ -37,7 +37,7 @@ class TaskListViewModel: ObservableObject {
     tasks.remove(atOffsets: offsets)
   }
   
-  func addTask(_ task: Task) {
+  func addTask(_ task: BlissTask) {
     tasks.append(task)
   }
 }

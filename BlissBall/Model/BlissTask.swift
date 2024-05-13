@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Task: Hashable {
+struct BlissTask: Hashable {
   var id = UUID()
   var title: String
   var content: String

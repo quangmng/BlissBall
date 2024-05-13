@@ -13,7 +13,7 @@
 		3A77388E2BF0F41200DC0BEA /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A77388D2BF0F41200DC0BEA /* AboutView.swift */; };
 		3A7738912BF0F89000DC0BEA /* ShakeNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7738902BF0F89000DC0BEA /* ShakeNotification.swift */; };
 		3A7738942BF16C0600DC0BEA /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7738932BF16C0600DC0BEA /* TaskView.swift */; };
-		3A7738962BF16DEC00DC0BEA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7738952BF16DEC00DC0BEA /* Task.swift */; };
+		3A7738962BF16DEC00DC0BEA /* BlissTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7738952BF16DEC00DC0BEA /* BlissTask.swift */; };
 		3A77389B2BF16F1900DC0BEA /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A77389A2BF16F1900DC0BEA /* TaskListViewModel.swift */; };
 		3A77389E2BF174E900DC0BEA /* SelfAffirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A77389D2BF174E900DC0BEA /* SelfAffirmationView.swift */; };
 		3A7738A02BF175F200DC0BEA /* Affirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A77389F2BF175F200DC0BEA /* Affirmation.swift */; };
@@ -43,7 +43,7 @@
 		3A77388D2BF0F41200DC0BEA /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		3A7738902BF0F89000DC0BEA /* ShakeNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeNotification.swift; sourceTree = "<group>"; };
 		3A7738932BF16C0600DC0BEA /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
-		3A7738952BF16DEC00DC0BEA /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		3A7738952BF16DEC00DC0BEA /* BlissTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlissTask.swift; sourceTree = "<group>"; };
 		3A77389A2BF16F1900DC0BEA /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 		3A77389D2BF174E900DC0BEA /* SelfAffirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfAffirmationView.swift; sourceTree = "<group>"; };
 		3A77389F2BF175F200DC0BEA /* Affirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Affirmation.swift; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				3A79687C2BE50FB000CFEC27 /* Tab.swift */,
-				3A7738952BF16DEC00DC0BEA /* Task.swift */,
+				3A7738952BF16DEC00DC0BEA /* BlissTask.swift */,
 				3A77389F2BF175F200DC0BEA /* Affirmation.swift */,
 				3A7738A42BF17C4500DC0BEA /* NetworkError.swift */,
 				3A7738A82BF17C9C00DC0BEA /* Quote.swift */,
@@ -396,7 +396,7 @@
 				3A7738872BF0EDE600DC0BEA /* CustomColorPickerView.swift in Sources */,
 				3A7738842BF0ED0400DC0BEA /* CustomBlissBallView.swift in Sources */,
 				3A7738AC2BF17D0B00DC0BEA /* BlissBallViewModel.swift in Sources */,
-				3A7738962BF16DEC00DC0BEA /* Task.swift in Sources */,
+				3A7738962BF16DEC00DC0BEA /* BlissTask.swift in Sources */,
 				3A7738A92BF17C9C00DC0BEA /* Quote.swift in Sources */,
 				3A7738A32BF1767E00DC0BEA /* SelfAffiramtionListViewModel.swift in Sources */,
 			);

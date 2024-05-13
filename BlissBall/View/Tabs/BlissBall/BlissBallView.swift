@@ -17,7 +17,9 @@ struct BlissBallView: View {
     NavigationStack {
       VStack {
         Button {
-            viewModel.fetchData()
+            Task {
+              await viewModel.fetchData()
+            }
             isAppear = true
         } label: {
           CustomBlissBallView()
@@ -30,7 +32,7 @@ struct BlissBallView: View {
             Text(viewModel.quoteData?.quote ?? "Do something to move yourself toward your major goal every day.")
               .font(.system(size: 16))
               .fontWeight(.semibold)
-            Text(viewModel.quoteData?.author ?? "")
+            Text(viewModel.quoteData?.author ?? "zenquote.io")
           }
         } else {
           Text("Shake phone or tap the ball to activate!")
@@ -42,7 +44,9 @@ struct BlissBallView: View {
       .navigationTitle("BlissBall")
     }
     .onReceive(NotificationCenter.default.publisher(for: .deviceDidShakeNotification)) { _ in
-      viewModel.fetchData()
+      Task {
+        await viewModel.fetchData()
+      }
       isAppear = true
     }
   }
