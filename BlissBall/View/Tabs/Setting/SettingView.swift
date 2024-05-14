@@ -11,10 +11,10 @@ import SwiftUI
 struct SettingView: View {
   @State var isHapticOn: Bool = true
   @State var isDarkModeOn: Bool = false
-  @State var isNotifOn: Bool = false
+  @State private var isAboutTapped: Bool = false
   @State var isHealthDataOn: Bool = false
   
-  @State var sheetControl = false
+  @State private var sheetControl = false
   
   var body: some View {
     NavigationStack {
@@ -28,7 +28,9 @@ struct SettingView: View {
             Text("Dark Mode")
           }
           
-          Toggle(isOn: $isNotifOn) {
+            NavigationLink{
+                
+            } label: {
             Text("Check-in notifications")
           }
           
@@ -38,12 +40,22 @@ struct SettingView: View {
         }
         
         Section {
-          NavigationLink {
-            AboutView()
-          } label: {
+            Button{
+                isAboutTapped.toggle()
+            } label: {
             Text("About this app")
           }
           .foregroundStyle(.blue)
+          .sheet(isPresented: $isAboutTapped, content: {
+                    AboutView()
+                  .presentationDetents([.height(550), .height(650)])
+              Button("Back to Settings") {
+                  isAboutTapped = false
+              }
+              .padding(.top, 15)
+              .buttonStyle(.borderedProminent)
+                })
+            
         }
         
         Section {
@@ -57,7 +69,7 @@ struct SettingView: View {
       }
       .navigationTitle("Settings")
     }
-    .alert("Alert", isPresented: $sheetControl) {
+    .alert("Are you sure to clear out your task and motivation entries?", isPresented: $sheetControl) {
       Button {
         //
       } label: {
@@ -74,5 +86,6 @@ struct SettingView: View {
 }
 
 #Preview {
-  SettingView()
+  SettingView().environmentObject(CustomBlissBallViewModel())
+
 }

@@ -45,21 +45,6 @@ struct ContentView: View {
     }
   }
 }
-// Consider either keeping this on a seperate file or remove. (recommend to keep, for ball customisation easiness)
-struct LuckyBall: View {
-  var body: some View {
-    Circle()
-      .frame(width:250)
-      .foregroundColor(.black)
-    Circle()
-      .frame(width:150)
-      .foregroundColor(.white)
-      .padding([.leading, .top],40)
-    Text("8")
-      .font(.system(size: 70))
-      .padding([.leading, .top],46)
-  }
-}
 
 #Preview {
   ContentView()
