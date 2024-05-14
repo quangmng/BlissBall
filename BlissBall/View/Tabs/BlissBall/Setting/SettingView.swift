@@ -9,12 +9,12 @@ import SwiftUI
 
 
 struct SettingView: View {
-  @State var isHapticOn: Bool = true
-  @State var isDarkModeOn: Bool = false
-  @State private var isAboutTapped: Bool = false
-  @State var isHealthDataOn: Bool = false
-  
-  @State private var sheetControl = false
+  @State private var isHapticOn = true
+  @State private var isDarkModeOn = false
+  @State private var isAboutTapped = false
+  @State private var isNotifSettingTapped = false
+  @State private var isHealthDataOn = false
+  @State private var clearAll = false
   
   var body: some View {
     NavigationStack {
@@ -28,16 +28,28 @@ struct SettingView: View {
             Text("Dark Mode")
           }
           
-            NavigationLink{
-                
-            } label: {
-            Text("Check-in notifications")
-          }
           
           Toggle(isOn: $isHealthDataOn) {
             Text("HealthKit Data Access")
           }
+            
+            Button{
+                isNotifSettingTapped.toggle()
+            } label: {
+            Text("Check-in notifications")
+          }
+            .sheet(isPresented: $isAboutTapped, content: {
+                      AboutView()
+                    .presentationDetents([.height(550), .height(650)])
+                Button("Back to Settings") {
+                    isAboutTapped = false
+                }
+                .padding(.top, 15)
+                .buttonStyle(.borderedProminent)
+                  })
         }
+          
+          
         
         Section {
             Button{
@@ -60,7 +72,7 @@ struct SettingView: View {
         
         Section {
           Button {
-            sheetControl.toggle()
+            clearAll.toggle()
           } label: {
             Text("Clear all user entries")
           }
@@ -69,7 +81,7 @@ struct SettingView: View {
       }
       .navigationTitle("Settings")
     }
-    .alert("Are you sure to clear out your task and motivation entries?", isPresented: $sheetControl) {
+    .alert("Are you sure to clear out your task and motivation entries?", isPresented: $clearAll) {
       Button {
         //
       } label: {
@@ -81,6 +93,7 @@ struct SettingView: View {
       } label: {
         Text("Clear")
       }
+        
     }
   }
 }
