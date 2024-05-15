@@ -37,6 +37,7 @@
 		C55FBB132BD5F67A000655DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55FBB122BD5F67A000655DE /* Assets.xcassets */; };
 		C55FBB162BD5F67A000655DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55FBB152BD5F67A000655DE /* Preview Assets.xcassets */; };
 		C561BC5C2BF4413F005B2D43 /* ThemeSettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C561BC5B2BF4413F005B2D43 /* ThemeSettingsModel.swift */; };
+		C58B23222BF581E30035D5FD /* BlissBall-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C58B23212BF581E30035D5FD /* BlissBall-icon.png */; };
 		C5ABCD0A2BF2FFC000E193FD /* checkinNotif-testingUseOnly.apns in Resources */ = {isa = PBXBuildFile; fileRef = C5ABCD092BF2FFC000E193FD /* checkinNotif-testingUseOnly.apns */; };
 		C5ABCD0C2BF3008F00E193FD /* chime2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C5ABCD0B2BF3008F00E193FD /* chime2.m4a */; };
 /* End PBXBuildFile section */
@@ -73,6 +74,7 @@
 		C55FBB122BD5F67A000655DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C55FBB152BD5F67A000655DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C561BC5B2BF4413F005B2D43 /* ThemeSettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSettingsModel.swift; sourceTree = "<group>"; };
+		C58B23212BF581E30035D5FD /* BlissBall-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BlissBall-icon.png"; sourceTree = "<group>"; };
 		C5ABCD092BF2FFC000E193FD /* checkinNotif-testingUseOnly.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "checkinNotif-testingUseOnly.apns"; path = "BlissBall/checkinNotif-testingUseOnly.apns"; sourceTree = "<group>"; };
 		C5ABCD0B2BF3008F00E193FD /* chime2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = chime2.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -322,6 +324,7 @@
 				3A7968782BE50F7100CFEC27 /* View */,
 				3A7738812BF0E1C100DC0BEA /* ViewModel */,
 				C55FBB122BD5F67A000655DE /* Assets.xcassets */,
+				C58B23212BF581E30035D5FD /* BlissBall-icon.png */,
 				C55FBB142BD5F67A000655DE /* Preview Content */,
 			);
 			path = BlissBall;
@@ -398,6 +401,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C543943F2BF1EBA4009714D6 /* chime.AIFF in Resources */,
+				C58B23222BF581E30035D5FD /* BlissBall-icon.png in Resources */,
 				C55FBB162BD5F67A000655DE /* Preview Assets.xcassets in Resources */,
 				C5ABCD0A2BF2FFC000E193FD /* checkinNotif-testingUseOnly.apns in Resources */,
 				C55FBB132BD5F67A000655DE /* Assets.xcassets in Resources */,
