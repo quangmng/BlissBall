@@ -33,11 +33,11 @@ struct ContentView: View {
           .font(.system(size: 18))
           .fontWeight(.semibold)
           .padding(.vertical, 20)
-          .foregroundStyle(LinearGradient(
-            colors: [.gray, .black],
-            startPoint: .leading,
-            endPoint: .trailing
-          ))
+//          .foregroundStyle(LinearGradient(
+//            colors: [.gray, .black],
+//            startPoint: .leading,
+//            endPoint: .trailing
+//          ))
         
         Spacer()
       }

@@ -30,6 +30,7 @@
 		3A7968852BE51B2900CFEC27 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968842BE51B2900CFEC27 /* TaskListView.swift */; };
 		3A79688A2BE51B7F00CFEC27 /* SelfAffirmationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968892BE51B7F00CFEC27 /* SelfAffirmationListView.swift */; };
 		3A79688C2BE51B8F00CFEC27 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A79688B2BE51B8F00CFEC27 /* CustomView.swift */; };
+		C51C97F62BF309AA009ADADB /* NotifSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51C97F52BF309AA009ADADB /* NotifSetView.swift */; };
 		C543943F2BF1EBA4009714D6 /* chime.AIFF in Resources */ = {isa = PBXBuildFile; fileRef = C543943E2BF1EBA4009714D6 /* chime.AIFF */; };
 		C55FBB0F2BD5F679000655DE /* BlissBallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55FBB0E2BD5F679000655DE /* BlissBallApp.swift */; };
 		C55FBB112BD5F679000655DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55FBB102BD5F679000655DE /* ContentView.swift */; };
@@ -63,6 +64,7 @@
 		3A7968842BE51B2900CFEC27 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		3A7968892BE51B7F00CFEC27 /* SelfAffirmationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfAffirmationListView.swift; sourceTree = "<group>"; };
 		3A79688B2BE51B8F00CFEC27 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		C51C97F52BF309AA009ADADB /* NotifSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifSetView.swift; sourceTree = "<group>"; };
 		C543943E2BF1EBA4009714D6 /* chime.AIFF */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = chime.AIFF; sourceTree = "<group>"; };
 		C55FBB0B2BD5F679000655DE /* BlissBubble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlissBubble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C55FBB0E2BD5F679000655DE /* BlissBallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlissBallApp.swift; sourceTree = "<group>"; };
@@ -232,7 +234,6 @@
 			children = (
 				3A7968862BE51B3500CFEC27 /* Home */,
 				3A7968872BE51B4100CFEC27 /* BlissBall */,
-				3A7968882BE51B4D00CFEC27 /* Setting */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -260,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				3A7968802BE51B0500CFEC27 /* BlissBallView.swift */,
+				3A7968882BE51B4D00CFEC27 /* Setting */,
 			);
 			path = BlissBall;
 			sourceTree = "<group>";
@@ -267,10 +269,19 @@
 		3A7968882BE51B4D00CFEC27 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				C51C97F42BF3098F009ADADB /* NotifSet */,
 				3A77388C2BF0F40400DC0BEA /* About */,
 				3A7968822BE51B1000CFEC27 /* SettingView.swift */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		C51C97F42BF3098F009ADADB /* NotifSet */ = {
+			isa = PBXGroup;
+			children = (
+				C51C97F52BF309AA009ADADB /* NotifSetView.swift */,
+			);
+			path = NotifSet;
 			sourceTree = "<group>";
 		};
 		C54394402BF1EE2B009714D6 /* audio */ = {
@@ -410,6 +421,7 @@
 				3A79688C2BE51B8F00CFEC27 /* CustomView.swift in Sources */,
 				3A77389E2BF174E900DC0BEA /* SelfAffirmationView.swift in Sources */,
 				3A7968762BE50EB700CFEC27 /* MainTabView.swift in Sources */,
+				C51C97F62BF309AA009ADADB /* NotifSetView.swift in Sources */,
 				C55FBB0F2BD5F679000655DE /* BlissBallApp.swift in Sources */,
 				3A7738942BF16C0600DC0BEA /* TaskView.swift in Sources */,
 				3A79688A2BE51B7F00CFEC27 /* SelfAffirmationListView.swift in Sources */,

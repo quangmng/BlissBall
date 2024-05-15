@@ -11,10 +11,16 @@ var sampleColorList: [Color] = [
   .black,
   .white,
   .red,
+  .pink,
+  .purple,
   .green,
   .yellow,
   .blue,
-  .brown
+  .teal,
+  .cyan,
+  .brown,
+  .orange,
+  
 ]
 
 struct CustomView: View {
@@ -37,14 +43,14 @@ struct CustomView: View {
           
           ScrollView(.horizontal) {
             HStack(spacing: 24) {
-              ForEach(colorList, id: \.self) { color in
+              ForEach(colorList, id: \.self) { colour in
                 Button {
-                  viewModel.extColor = color
+                  viewModel.extColor = colour
                 } label: {
                   Rectangle()
                     
-                    .fill(color)
-                    
+                    .fill(colour)
+                    .strokeBorder(.gray, lineWidth: 4)
                     .frame(width: 48, height: 48)
                     .clipShape(.buttonBorder)
                     
@@ -65,12 +71,13 @@ struct CustomView: View {
           
           ScrollView(.horizontal) {
             HStack(spacing: 24) {
-              ForEach(colorList, id: \.self) { color in
+              ForEach(colorList, id: \.self) { colour in
                 Button {
-                  viewModel.textColor = color
+                  viewModel.textColor = colour
                 } label: {
                   Rectangle()
-                    .fill(color)
+                    .fill(colour)
+                    .strokeBorder(.gray, lineWidth: 4)
                     .frame(width: 48, height: 48)
                     .clipShape(.buttonBorder)
                 }
@@ -90,12 +97,13 @@ struct CustomView: View {
           
           ScrollView(.horizontal) {
             HStack(spacing: 24) {
-              ForEach(colorList, id: \.self) { color in
+              ForEach(colorList, id: \.self) { colour in
                 Button {
-                  viewModel.innerColor = color
+                  viewModel.innerColor = colour
                 } label: {
                   Rectangle()
-                    .fill(color)
+                    .fill(colour)
+                    .strokeBorder(.gray, lineWidth: 4)
                     .frame(width: 48, height: 48)
                     .clipShape(.buttonBorder)
                 }

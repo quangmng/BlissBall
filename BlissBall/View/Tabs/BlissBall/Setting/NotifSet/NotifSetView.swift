@@ -9,7 +9,8 @@ import SwiftUI
 
 struct NotifSetView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Notification Setting, daily schedule (on/off)")
+        Text("TimePicker")
     }
 }
 

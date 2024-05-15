@@ -36,7 +36,6 @@ struct MainTabView: View {
         }
         .tag(Tab.setting)
     }
-    .tint(.black)
     .navigationBarBackButtonHidden()
   }
 }

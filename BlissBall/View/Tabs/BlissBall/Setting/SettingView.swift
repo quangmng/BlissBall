@@ -38,11 +38,11 @@ struct SettingView: View {
             } label: {
             Text("Check-in notifications")
           }
-            .sheet(isPresented: $isAboutTapped, content: {
-                      AboutView()
+            .sheet(isPresented: $isNotifSettingTapped, content: {
+                      NotifSetView()
                     .presentationDetents([.height(550), .height(650)])
                 Button("Back to Settings") {
-                    isAboutTapped = false
+                    isNotifSettingTapped = false
                 }
                 .padding(.top, 15)
                 .buttonStyle(.borderedProminent)
