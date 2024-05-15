@@ -10,9 +10,18 @@ import SwiftUI
 @main
 struct BlissBallApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @AppStorage("themeSetting") var themeSetting: ThemeSettings = .system
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let contentView = ContentView()
+            switch themeSetting {
+            case .light:
+                contentView.environment(\.colorScheme, .light)
+            case .dark:
+                contentView.environment(\.colorScheme, .dark)
+            case .system:
+                contentView
+            }
         }
     }
 }

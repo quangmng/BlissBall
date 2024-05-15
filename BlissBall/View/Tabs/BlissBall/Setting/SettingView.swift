@@ -10,7 +10,7 @@ import SwiftUI
 
 struct SettingView: View {
   @State private var isHapticOn = true
-  @State private var isDarkModeOn = false
+  @State private var themeSetting: ThemeSettings = .system // This will hold the current theme setting
   @State private var isAboutTapped = false
   @State private var isNotifSettingTapped = false
   @State private var isHealthDataOn = false
@@ -24,9 +24,12 @@ struct SettingView: View {
             Text("Haptic Feedback")
           }
           
-          Toggle(isOn: $isDarkModeOn) {
-            Text("Dark Mode")
-          }
+            Picker("Theme", selection: $themeSetting) {
+                ForEach(ThemeSettings.allCases) { setting in
+                    Text(setting.rawValue).tag(setting)
+                }
+            }
+            .pickerStyle(.menu) // Adjust this to .inline or .wheel as per your design needs
           
           
           Toggle(isOn: $isHealthDataOn) {
