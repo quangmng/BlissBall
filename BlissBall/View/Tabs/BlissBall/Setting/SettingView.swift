@@ -10,7 +10,7 @@ import SwiftUI
 
 struct SettingView: View {
   @State private var isHapticOn = true
-  @State private var themeSetting: ThemeSettings = .system // This will hold the current theme setting
+    @AppStorage("themeSetting") var themeSetting: ThemeSettings = .system  // Default to system theme
   @State private var isAboutTapped = false
   @State private var isNotifSettingTapped = false
   @State private var isHealthDataOn = false
@@ -24,11 +24,11 @@ struct SettingView: View {
             Text("Haptic Feedback")
           }
           
-          Picker("Theme", selection: $themeSetting) {
-            ForEach(ThemeSettings.allCases) { setting in
-              Text(setting.rawValue).tag(setting)
-            }
-          }
+            Picker("Theme", selection: $themeSetting) {
+                ForEach(ThemeSettings.allCases) { setting in
+                    Text(setting.rawValue).tag(setting)
+                }
+                                }
           .pickerStyle(.menu) // Adjust this to .inline or .wheel as per your design needs
           
           
@@ -101,7 +101,9 @@ struct SettingView: View {
   }
 }
 
-#Preview {
-  SettingView().environmentObject(CustomBlissBallViewModel())
-  
+struct SettingView_Previews: PreviewProvider {
+    static var previews: some View {
+        SettingView().environmentObject(CustomBlissBallViewModel())
+        
+    }
 }

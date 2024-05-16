@@ -13,18 +13,24 @@ struct BlissBallApp: App {
     @AppStorage("themeSetting") var themeSetting: ThemeSettings = .system
     var body: some Scene {
         WindowGroup {
-            let contentView = ContentView()
-            switch themeSetting {
-            case .light:
-                contentView.environment(\.colorScheme, .light)
-            case .dark:
-                contentView.environment(\.colorScheme, .dark)
-            case .system:
-                contentView
+            ContentView()
+                            .applyTheme(themeSetting)
+                    }
+                }
             }
-        }
-    }
-}
+
+            extension View {
+                func applyTheme(_ themeSetting: ThemeSettings) -> some View {
+                    switch themeSetting {
+                    case .light:
+                        return AnyView(self.environment(\.colorScheme, .light))
+                    case .dark:
+                        return AnyView(self.environment(\.colorScheme, .dark))
+                    case .system:
+                        return AnyView(self) // No color scheme, follow system setting
+                    }
+                }
+            }
 
 // MARK: - AppDelegate
 
