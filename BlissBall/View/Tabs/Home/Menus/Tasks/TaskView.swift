@@ -26,14 +26,6 @@ struct TaskView: View {
             .padding(.bottom, 30)
         }
         
-        VStack(alignment: .leading) {
-          Text("Content")
-            .font(.title2)
-            .fontWeight(.semibold)
-          TextField("Write Task Content", text: $taskContent)
-        }
-        .padding(.bottom, 30)
-        
         Button {
           taskListViewModel.addTask(.init(title: taskTitle, content: taskContent))
           dismiss()

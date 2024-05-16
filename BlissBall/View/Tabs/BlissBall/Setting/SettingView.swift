@@ -24,53 +24,53 @@ struct SettingView: View {
             Text("Haptic Feedback")
           }
           
-            Picker("Theme", selection: $themeSetting) {
-                ForEach(ThemeSettings.allCases) { setting in
-                    Text(setting.rawValue).tag(setting)
-                }
+          Picker("Theme", selection: $themeSetting) {
+            ForEach(ThemeSettings.allCases) { setting in
+              Text(setting.rawValue).tag(setting)
             }
-            .pickerStyle(.menu) // Adjust this to .inline or .wheel as per your design needs
+          }
+          .pickerStyle(.menu) // Adjust this to .inline or .wheel as per your design needs
           
           
           Toggle(isOn: $isHealthDataOn) {
             Text("HealthKit Data Access")
           }
-            
-            Button{
-                isNotifSettingTapped.toggle()
-            } label: {
+          
+          Button{
+            isNotifSettingTapped.toggle()
+          } label: {
             Text("Check-in notifications")
           }
-            .sheet(isPresented: $isNotifSettingTapped, content: {
-                      NotifSetView()
-                    .presentationDetents([.height(550), .height(650)])
-                Button("Back to Settings") {
-                    isNotifSettingTapped = false
-                }
-                .padding(.top, 15)
-                .buttonStyle(.borderedProminent)
-                  })
+          .sheet(isPresented: $isNotifSettingTapped, content: {
+            NotifSetView()
+              .presentationDetents([.height(550), .height(650)])
+            Button("Back to Settings") {
+              isNotifSettingTapped = false
+            }
+            .padding(.top, 15)
+            .buttonStyle(.borderedProminent)
+          })
         }
-          
-          
+        
+        
         
         Section {
-            Button{
-                isAboutTapped.toggle()
-            } label: {
+          Button{
+            isAboutTapped.toggle()
+          } label: {
             Text("About this app")
           }
           .foregroundStyle(.blue)
           .sheet(isPresented: $isAboutTapped, content: {
-                    AboutView()
-                  .presentationDetents([.height(550), .height(650)])
-              Button("Back to Settings") {
-                  isAboutTapped = false
-              }
-              .padding(.top, 15)
-              .buttonStyle(.borderedProminent)
-                })
-            
+            AboutView()
+              .presentationDetents([.height(550), .height(650)])
+            Button("Back to Settings") {
+              isAboutTapped = false
+            }
+            .padding(.top, 15)
+            .buttonStyle(.borderedProminent)
+          })
+          
         }
         
         Section {
@@ -96,12 +96,12 @@ struct SettingView: View {
       } label: {
         Text("Clear")
       }
-        
+      
     }
   }
 }
 
 #Preview {
   SettingView().environmentObject(CustomBlissBallViewModel())
-
+  
 }
