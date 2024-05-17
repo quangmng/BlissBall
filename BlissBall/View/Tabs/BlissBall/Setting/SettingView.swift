@@ -21,7 +21,7 @@ struct SettingView: View {
       List {
         Section {
           Toggle(isOn: $isHapticOn) {
-            Text("Haptic Feedback")
+            Text("Haptic Feedback (Planned)")
           }
           
             Picker("Theme", selection: $themeSetting) {
@@ -33,13 +33,13 @@ struct SettingView: View {
           
           
           Toggle(isOn: $isHealthDataOn) {
-            Text("HealthKit Data Access")
+            Text("HealthKit Data Access (Planned)")
           }
           
           Button{
             isNotifSettingTapped.toggle()
           } label: {
-            Text("Check-in notifications")
+            Text("Check-in notifications (Work In Progress)")
           }
           .sheet(isPresented: $isNotifSettingTapped, content: {
             NotifSetView()
@@ -72,32 +72,10 @@ struct SettingView: View {
           })
           
         }
-        
-        Section {
-          Button {
-            clearAll.toggle()
-          } label: {
-            Text("Clear all user entries")
-          }
-          .foregroundStyle(.red)
-        }
       }
       .navigationTitle("Settings")
     }
-    .alert("Are you sure to clear out your task and motivation entries?", isPresented: $clearAll) {
-      Button {
-        //
-      } label: {
-        Text("Cancel")
-      }
-      
-      Button {
-        //
-      } label: {
-        Text("Clear")
-      }
-      
-    }
+    
   }
 }
 

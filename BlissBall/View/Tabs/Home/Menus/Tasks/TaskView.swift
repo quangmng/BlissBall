@@ -21,7 +21,7 @@ struct TaskView: View {
                     TextField("Enter a new task", text: $newTaskTitle)
                         .autocapitalization(.sentences)
                         .textFieldStyle(.plain)
-                        .padding(EdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12))
+                        //.padding(EdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12))
                         .background(Color(UIColor.systemBackground))
                         .cornerRadius(10)
                         .onSubmit {

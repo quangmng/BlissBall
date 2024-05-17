@@ -53,7 +53,7 @@ class SelfAffirmationViewModel: ObservableObject {
             UserDefaults.standard.set(data, forKey: userDefaultsKey)
         }
     }
-    func loadTasks() {
+    func loadAffirmations() {
         if let data = UserDefaults.standard.data(forKey: userDefaultsKey),
            let savedAffirmations = try? JSONDecoder().decode([Affirmation].self, from: data) {
             affirmations = savedAffirmations

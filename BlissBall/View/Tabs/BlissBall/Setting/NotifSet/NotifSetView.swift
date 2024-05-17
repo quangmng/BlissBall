@@ -9,8 +9,11 @@ import SwiftUI
 
 struct NotifSetView: View {
     var body: some View {
-        Text("Notification Setting, daily schedule (on/off)")
-        Text("TimePicker")
+        Text("Setting is in development. Check back later :)")
+            .padding()
+        Text("Notification can be tested via iPhone simulator using 'checkinNotif-testingUseOnly.apns' file by dragging and dropping file to simulator.")
+            .padding(.horizontal, 20)
+            
     }
 }
 

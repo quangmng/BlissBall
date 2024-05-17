@@ -19,7 +19,7 @@ struct AboutView: View {
             Text("BlissBall")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-            Text("v1.0")
+            Text("v0.1")
             Text("Made with ❤️ from the iOSDev team")
             Text("([Quang Minh](https://github.com/quangmng), [Wende Zhou](https://github.com/MarvelousAlex) & [Jung Woo Choi](https://github.com/cjungwo))")
                 .font(Font.system(size: 14))
