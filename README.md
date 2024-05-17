@@ -5,7 +5,8 @@ Technologies used: <br><br>
 ![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white)
 ![iOS](https://img.shields.io/badge/iOS/iPadOS-%2320232a.svg?style=for-the-badge&logo=ios&logoColor=white)<br><br>
 an iOSdev group proj :)<br>
-Members: Quang Minh Nguyen, Wende Zhou & Jung Woo Choi
+Members: Quang Minh Nguyen, Wende Zhou & Jung Woo Choi <br>
+Designed by Quang Minh & the Inter8ctors team - FID 2024
 
 Frameworks Used:
 - SwiftUI

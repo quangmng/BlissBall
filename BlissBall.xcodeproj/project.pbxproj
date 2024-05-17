@@ -295,7 +295,6 @@
 		C55FBB022BD5F679000655DE = {
 			isa = PBXGroup;
 			children = (
-				C58B232C2BF716F90035D5FD /* CoreData */,
 				C5ABCD092BF2FFC000E193FD /* checkinNotif-testingUseOnly.apns */,
 				C55FBB0D2BD5F679000655DE /* BlissBall */,
 				C55FBB0C2BD5F679000655DE /* Products */,
@@ -331,13 +330,6 @@
 				C55FBB152BD5F67A000655DE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		C58B232C2BF716F90035D5FD /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
