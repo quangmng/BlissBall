@@ -42,7 +42,7 @@ private struct MainMenusView: View {
       }
       
       ScrollView {
-        NavigationLink(destination: TaskView()) {
+          NavigationLink(destination: TaskView(taskListViewModel: TaskListViewModel())) {
           ZStack(alignment: .bottomLeading) {
             Image("menuImg1")
               .resizable()

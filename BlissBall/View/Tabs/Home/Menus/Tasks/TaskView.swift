@@ -10,34 +10,35 @@
 import SwiftUI
 
 struct TaskView: View {
-    @State var tasks: [String] = []
-    @State private var searchEntry = ""
-    @State private var newTask = ""
-    @State private var showingNewTaskEntry = false// State to toggle new task entry visibility
+    @ObservedObject var taskListViewModel: TaskListViewModel
+    @State private var showingNewTaskEntry = false // State to toggle new task entry visibility
+    @State private var newTaskTitle = ""
 
     var body: some View {
         NavigationStack {
             List {
                 if showingNewTaskEntry {
-                    TextField("Enter a new task", text: $newTask)
+                    TextField("Enter a new task", text: $newTaskTitle)
                         .autocapitalization(.sentences)
                         .textFieldStyle(.plain)
                         .padding(EdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12))
                         .background(Color(UIColor.systemBackground))
                         .cornerRadius(10)
                         .onSubmit {
-                            addTask()
+                            let newTask = BlissTask(title: newTaskTitle)
+                            taskListViewModel.addTask(newTask)
+                            newTaskTitle = ""
+                            showingNewTaskEntry = false
                         }
-                        //.focused($showingNewTaskEntry)
                 }
 
-                ForEach(searchResults, id: \.self) { task in
-                    Text(task)
+                ForEach(taskListViewModel.searchResults) { task in
+                    Text(task.title)
                         .transition(.move(edge: .top)) // Adds a moving transition for each item
                 }
-                .onDelete(perform: delete)
+                .onDelete(perform: taskListViewModel.delete)
             }
-            .animation(.spring(), value: tasks) // Apply spring animation to the list
+            .animation(.spring(), value: taskListViewModel.tasks) // Apply spring animation to the list
             .safeAreaInset(edge: .bottom, alignment: .leading) {
                 Button(action: {
                     withAnimation {
@@ -60,36 +61,12 @@ struct TaskView: View {
             }
             .navigationTitle("Your Tasks")
         }
-        .searchable(text: $searchEntry)
-    }
-
-    var searchResults: [String] {
-        if searchEntry.isEmpty {
-            return tasks
-        } else {
-            return tasks.filter { $0.contains(searchEntry) }
-        }
-    }
-
-    func addTask() {
-        if !newTask.isEmpty {
-            withAnimation {
-                tasks.insert(newTask, at: 0) // Insert new task at the top of the list
-            }
-            newTask = ""
-            showingNewTaskEntry = false
-        }
-    }
-
-    func delete(at offsets: IndexSet) {
-        withAnimation {
-            tasks.remove(atOffsets: offsets)
-        }
+        .searchable(text: $taskListViewModel.searchEntry)
     }
 }
 
 struct TaskView_Previews: PreviewProvider {
     static var previews: some View {
-        TaskView()
+        TaskView(taskListViewModel: TaskListViewModel())
     }
 }
