@@ -12,10 +12,8 @@
 		3A77388B2BF0EE8A00DC0BEA /* CustomBlissBallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A77388A2BF0EE8A00DC0BEA /* CustomBlissBallViewModel.swift */; };
 		3A77388E2BF0F41200DC0BEA /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A77388D2BF0F41200DC0BEA /* AboutView.swift */; };
 		3A7738912BF0F89000DC0BEA /* ShakeNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7738902BF0F89000DC0BEA /* ShakeNotification.swift */; };
-		3A7738942BF16C0600DC0BEA /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7738932BF16C0600DC0BEA /* TaskView.swift */; };
 		3A7738962BF16DEC00DC0BEA /* BlissTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7738952BF16DEC00DC0BEA /* BlissTask.swift */; };
 		3A77389B2BF16F1900DC0BEA /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A77389A2BF16F1900DC0BEA /* TaskListViewModel.swift */; };
-		3A77389E2BF174E900DC0BEA /* SelfAffirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A77389D2BF174E900DC0BEA /* SelfAffirmationView.swift */; };
 		3A7738A02BF175F200DC0BEA /* Affirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A77389F2BF175F200DC0BEA /* Affirmation.swift */; };
 		3A7738A32BF1767E00DC0BEA /* SelfAffiramtionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7738A22BF1767D00DC0BEA /* SelfAffiramtionListViewModel.swift */; };
 		3A7738A52BF17C4500DC0BEA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7738A42BF17C4500DC0BEA /* NetworkError.swift */; };
@@ -27,7 +25,7 @@
 		3A79687D2BE50FB000CFEC27 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A79687C2BE50FB000CFEC27 /* Tab.swift */; };
 		3A7968812BE51B0500CFEC27 /* BlissBallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968802BE51B0500CFEC27 /* BlissBallView.swift */; };
 		3A7968832BE51B1000CFEC27 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968822BE51B1000CFEC27 /* SettingView.swift */; };
-		3A7968852BE51B2900CFEC27 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968842BE51B2900CFEC27 /* TaskListView.swift */; };
+		3A7968852BE51B2900CFEC27 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968842BE51B2900CFEC27 /* TaskView.swift */; };
 		3A79688A2BE51B7F00CFEC27 /* SelfAffirmationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968892BE51B7F00CFEC27 /* SelfAffirmationListView.swift */; };
 		3A79688C2BE51B8F00CFEC27 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A79688B2BE51B8F00CFEC27 /* CustomView.swift */; };
 		C51C97F62BF309AA009ADADB /* NotifSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51C97F52BF309AA009ADADB /* NotifSetView.swift */; };
@@ -48,10 +46,8 @@
 		3A77388A2BF0EE8A00DC0BEA /* CustomBlissBallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBlissBallViewModel.swift; sourceTree = "<group>"; };
 		3A77388D2BF0F41200DC0BEA /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		3A7738902BF0F89000DC0BEA /* ShakeNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeNotification.swift; sourceTree = "<group>"; };
-		3A7738932BF16C0600DC0BEA /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		3A7738952BF16DEC00DC0BEA /* BlissTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlissTask.swift; sourceTree = "<group>"; };
 		3A77389A2BF16F1900DC0BEA /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
-		3A77389D2BF174E900DC0BEA /* SelfAffirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfAffirmationView.swift; sourceTree = "<group>"; };
 		3A77389F2BF175F200DC0BEA /* Affirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Affirmation.swift; sourceTree = "<group>"; };
 		3A7738A22BF1767D00DC0BEA /* SelfAffiramtionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfAffiramtionListViewModel.swift; sourceTree = "<group>"; };
 		3A7738A42BF17C4500DC0BEA /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -63,7 +59,7 @@
 		3A79687C2BE50FB000CFEC27 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		3A7968802BE51B0500CFEC27 /* BlissBallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlissBallView.swift; sourceTree = "<group>"; };
 		3A7968822BE51B1000CFEC27 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		3A7968842BE51B2900CFEC27 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		3A7968842BE51B2900CFEC27 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		3A7968892BE51B7F00CFEC27 /* SelfAffirmationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfAffirmationListView.swift; sourceTree = "<group>"; };
 		3A79688B2BE51B8F00CFEC27 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		C51C97F52BF309AA009ADADB /* NotifSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifSetView.swift; sourceTree = "<group>"; };
@@ -145,8 +141,7 @@
 		3A7738922BF16BED00DC0BEA /* Tasks */ = {
 			isa = PBXGroup;
 			children = (
-				3A7738932BF16C0600DC0BEA /* TaskView.swift */,
-				3A7968842BE51B2900CFEC27 /* TaskListView.swift */,
+				3A7968842BE51B2900CFEC27 /* TaskView.swift */,
 			);
 			path = Tasks;
 			sourceTree = "<group>";
@@ -179,7 +174,6 @@
 		3A77389C2BF174AC00DC0BEA /* SelfAffirmation */ = {
 			isa = PBXGroup;
 			children = (
-				3A77389D2BF174E900DC0BEA /* SelfAffirmationView.swift */,
 				3A7968892BE51B7F00CFEC27 /* SelfAffirmationListView.swift */,
 			);
 			path = SelfAffirmation;
@@ -426,14 +420,12 @@
 				3A7738912BF0F89000DC0BEA /* ShakeNotification.swift in Sources */,
 				3A79687D2BE50FB000CFEC27 /* Tab.swift in Sources */,
 				3A79688C2BE51B8F00CFEC27 /* CustomView.swift in Sources */,
-				3A77389E2BF174E900DC0BEA /* SelfAffirmationView.swift in Sources */,
 				3A7968762BE50EB700CFEC27 /* MainTabView.swift in Sources */,
 				C51C97F62BF309AA009ADADB /* NotifSetView.swift in Sources */,
 				C561BC5C2BF4413F005B2D43 /* ThemeSettingsModel.swift in Sources */,
 				C55FBB0F2BD5F679000655DE /* BlissBallApp.swift in Sources */,
-				3A7738942BF16C0600DC0BEA /* TaskView.swift in Sources */,
 				3A79688A2BE51B7F00CFEC27 /* SelfAffirmationListView.swift in Sources */,
-				3A7968852BE51B2900CFEC27 /* TaskListView.swift in Sources */,
+				3A7968852BE51B2900CFEC27 /* TaskView.swift in Sources */,
 				3A77388B2BF0EE8A00DC0BEA /* CustomBlissBallViewModel.swift in Sources */,
 				3A7738A02BF175F200DC0BEA /* Affirmation.swift in Sources */,
 				3A7738A72BF17C5800DC0BEA /* WebService.swift in Sources */,

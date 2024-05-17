@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SelfAffirmationListView: View {
+struct SelfAffirmationView: View {
   @StateObject var viewModel = SelfAffiramtionListViewModel()
   
   var body: some View {
@@ -21,9 +21,9 @@ struct SelfAffirmationListView: View {
         }
         
         HStack {
-          NavigationLink {
-            SelfAffirmationView(viewModel: viewModel)
-          } label: {
+            Button{
+            
+            } label: {
             HStack {
               HStack {
                 Image(systemName:"plus.circle.fill")
@@ -50,5 +50,5 @@ struct SelfAffirmationListView: View {
 
 
 #Preview {
-  SelfAffirmationListView()
+  SelfAffirmationView()
 }
