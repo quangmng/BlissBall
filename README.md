@@ -1,5 +1,5 @@
 # BlissBall 
-<img src="https://github.com/quangmng/BubblePop/blob/main/assets/img/BubblePopIcon.png" width="100" height="100"><br>
+<img src="https://github.com/quangmng/BlissBall/blob/main/BlissBall/AppIcon-BlissBubble.png" width="100" height="100"><br>
 Technologies used: <br><br>
 ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white)
 ![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white)
