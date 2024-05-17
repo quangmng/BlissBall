@@ -12,3 +12,9 @@ enum Tab {
   case blissball
   case setting
 }
+
+enum Visibility {
+    case automatic
+    case hidden
+    case visible
+}

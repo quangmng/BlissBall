@@ -21,7 +21,7 @@ struct SelfAffirmationView: View {
             VStack {
                 List {
                     if showingNewAffirmationEntry {
-                        TextField("Enter a new task", text: $newAffirmationEntry)
+                        TextField("Say Something Motivating", text: $newAffirmationEntry)
                             .autocapitalization(.sentences)
                             .textFieldStyle(.plain)
                             .padding(EdgeInsets(top: 8, leading: 12, bottom: 8, trailing: 12))
@@ -78,7 +78,7 @@ struct SelfAffirmationView: View {
                             }
                         }
                     } label: {
-                        Text(isCooldownActive ? "Please Wait \(countdown)s to generate new quotes" : "Generate Inspirational Quote")
+                        Text(isCooldownActive ? "Please wait \(countdown)s to generate new quotes" : "Generate a random inspirational quote")
                     }
                     .padding(.top, 2)
                     .buttonStyle(.borderedProminent)

@@ -52,6 +52,7 @@ struct TaskView: View {
                     }
                     .font(.system(size: 20))
                     .padding(8)
+                    .frame(width: 136)
                 })
                 .padding()
                 .buttonStyle(.borderedProminent)

@@ -42,7 +42,8 @@ private struct MainMenusView: View {
       }
       
       ScrollView {
-          NavigationLink(destination: TaskView(taskListViewModel: TaskListViewModel())) {
+          NavigationLink(destination: {TaskView(taskListViewModel: TaskListViewModel())}()
+            .toolbar(.hidden, for: .tabBar)){
           ZStack(alignment: .bottomLeading) {
             Image("menuImg1")
               .resizable()
@@ -55,8 +56,10 @@ private struct MainMenusView: View {
           }
           .frame(width: .infinity, height: 200)
         }
+          
         
-        NavigationLink(destination: SelfAffirmationView()) {
+          NavigationLink(destination: {SelfAffirmationView()}()
+            .toolbar(.hidden, for: .tabBar)) {
           ZStack(alignment: .bottomLeading) {
             Image("menuImg2")
               .resizable()
@@ -70,7 +73,8 @@ private struct MainMenusView: View {
           .frame(width: .infinity, height: 200)
         }
         
-        NavigationLink(destination: CustomView().environmentObject(customBlissBallViewModel)) {
+          NavigationLink(destination: {CustomView().environmentObject(customBlissBallViewModel)}()
+            .toolbar(.hidden, for: .tabBar)) {
           ZStack {
             Rectangle()
               .foregroundStyle(.gray)

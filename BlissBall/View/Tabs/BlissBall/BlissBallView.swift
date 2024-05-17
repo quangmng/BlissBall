@@ -11,30 +11,17 @@ struct BlissBallView: View {
   @EnvironmentObject var customBlissBallViewModel: CustomBlissBallViewModel
   @StateObject var viewModel = BlissBallViewModel()
   
-  @State private var isAppear = false
-  
   var body: some View {
     NavigationStack {
       VStack {
         Button {
-            Task {
-              await viewModel.fetchData()
-            }
-            isAppear = true
+
         } label: {
           CustomBlissBallView()
             .environmentObject(customBlissBallViewModel)
         }
         .padding(.bottom, 16)
         
-        if isAppear {
-          VStack {
-            Text(viewModel.quoteData?.quote ?? "Do something to move yourself toward your major goal every day.")
-              .font(.system(size: 16))
-              .fontWeight(.semibold)
-            Text(viewModel.quoteData?.author ?? "zenquote.io")
-          }
-        } else {
           Text("Shake phone or tap the ball to activate!")
             .font(.system(size: 24))
             .fontWeight(.semibold)
@@ -42,9 +29,9 @@ struct BlissBallView: View {
       }
       .padding(.horizontal, 20)
       .navigationTitle("BlissBall")
-    }
+    
     .onReceive(NotificationCenter.default.publisher(for: .deviceDidShakeNotification)) { _ in
-      isAppear = true
+      
     }
   }
 }
