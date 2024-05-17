@@ -1,6 +1,6 @@
 //
 //  BlissBallViewModel.swift
-//  BlissBubble
+//  BlissBall
 //
 //  Created by JungWoo Choi on 13/5/2024.
 //
@@ -8,11 +8,11 @@
 import Foundation
 
 class BlissBallViewModel: ObservableObject {
-    //  @Published var quoteData: Quote?
-    //
-    //  let baseURL = "https://zenquotes.io/api/random"
-    //
-    //  func fetchData() async -> Void {
-    //    guard let downloadedQuote: [Quote] = await WebService().downloadData(fromURL: baseURL) else { return }
-    //    quoteData = downloadedQuote[0]
+
+    //func for displaying a random task into BlissBallView
+    
+    //func for displaying a random self affirmation into BlissBallView
+    
+    //func to delete the task that user "completed"
+    
 }

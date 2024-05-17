@@ -48,7 +48,7 @@ struct SelfAffirmationView: View {
                         }
                     } label: {
                         HStack {
-                            HStack {
+                            HStack(alignment: .center){
                                 Image(systemName: "plus.circle.fill")
                                 Text("Say something motivating")
                             }
@@ -80,6 +80,7 @@ struct SelfAffirmationView: View {
                     } label: {
                         Text(isCooldownActive ? "Please wait \(countdown)s to generate new quotes" : "Generate a random inspirational quote")
                     }
+                    
                     .padding(.top, 2)
                     .buttonStyle(.borderedProminent)
                     .disabled(isFetchingQuote || isCooldownActive || remainingUses <= 0) // Disable the button if a quote is being fetched or cooldown is active

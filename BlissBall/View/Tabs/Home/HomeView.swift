@@ -10,17 +10,13 @@ import SwiftUI
 struct HomeView: View {
   @EnvironmentObject var customBlissBallViewModel: CustomBlissBallViewModel
   
-  let userName: String = "User1"
   
   var body: some View {
     NavigationStack {
-      MainMenusView(userName: userName)
-        .toolbar {
-          Button("Help") {
-            //popupview
-          }
-        }
-        .navigationBarTitleDisplayMode(.inline)
+      MainMenusView()
+        
+        .navigationTitle("Let's Get Things Done!")
+        .navigationBarTitleDisplayMode(.large)
     }
   }
 }
@@ -29,17 +25,11 @@ struct HomeView: View {
 private struct MainMenusView: View {
   @EnvironmentObject var customBlissBallViewModel: CustomBlissBallViewModel
   
-  let userName: String
-  
   fileprivate var body: some View {
     VStack {
-      VStack(alignment: .leading) {
-        Text("Welcome, \(userName)")
-        
-        Text("Let's Get Things Done!")
-          .font(.largeTitle)
-          .fontWeight(.bold)
-      }
+        VStack(alignment: .leading) {
+            
+        }
       
       ScrollView {
           NavigationLink(destination: {TaskView(taskListViewModel: TaskListViewModel())}()

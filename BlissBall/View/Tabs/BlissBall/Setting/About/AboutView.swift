@@ -21,11 +21,13 @@ struct AboutView: View {
                 .fontWeight(.bold)
             Text("v1.0")
             Text("Made with ❤️ from the iOSDev team")
-            Text("Designed by Quang & the Inter8ctors team - FID")
-                .font(Font.system(size: 14))
-                .padding(.bottom, 5)
             Text("([Quang Minh](https://github.com/quangmng), [Wende Zhou](https://github.com/MarvelousAlex) & [Jung Woo Choi](https://github.com/cjungwo))")
                 .font(Font.system(size: 14))
+                .padding(.bottom, 5)
+            Text("Designed by Quang & the Inter8ctors team - FID")
+                .font(Font.system(size: 14))
+                
+            
         }
     }
 }
