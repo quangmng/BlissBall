@@ -15,7 +15,7 @@
 		3A7738962BF16DEC00DC0BEA /* BlissTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7738952BF16DEC00DC0BEA /* BlissTask.swift */; };
 		3A77389B2BF16F1900DC0BEA /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A77389A2BF16F1900DC0BEA /* TaskListViewModel.swift */; };
 		3A7738A02BF175F200DC0BEA /* Affirmation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A77389F2BF175F200DC0BEA /* Affirmation.swift */; };
-		3A7738A32BF1767E00DC0BEA /* SelfAffiramtionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7738A22BF1767D00DC0BEA /* SelfAffiramtionListViewModel.swift */; };
+		3A7738A32BF1767E00DC0BEA /* SelfAffirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7738A22BF1767D00DC0BEA /* SelfAffirmationViewModel.swift */; };
 		3A7738A52BF17C4500DC0BEA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7738A42BF17C4500DC0BEA /* NetworkError.swift */; };
 		3A7738A72BF17C5800DC0BEA /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7738A62BF17C5800DC0BEA /* WebService.swift */; };
 		3A7738A92BF17C9C00DC0BEA /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7738A82BF17C9C00DC0BEA /* Quote.swift */; };
@@ -26,7 +26,7 @@
 		3A7968812BE51B0500CFEC27 /* BlissBallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968802BE51B0500CFEC27 /* BlissBallView.swift */; };
 		3A7968832BE51B1000CFEC27 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968822BE51B1000CFEC27 /* SettingView.swift */; };
 		3A7968852BE51B2900CFEC27 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968842BE51B2900CFEC27 /* TaskView.swift */; };
-		3A79688A2BE51B7F00CFEC27 /* SelfAffirmationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968892BE51B7F00CFEC27 /* SelfAffirmationListView.swift */; };
+		3A79688A2BE51B7F00CFEC27 /* SelfAffirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7968892BE51B7F00CFEC27 /* SelfAffirmationView.swift */; };
 		3A79688C2BE51B8F00CFEC27 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A79688B2BE51B8F00CFEC27 /* CustomView.swift */; };
 		C51C97F62BF309AA009ADADB /* NotifSetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51C97F52BF309AA009ADADB /* NotifSetView.swift */; };
 		C543943F2BF1EBA4009714D6 /* chime.AIFF in Resources */ = {isa = PBXBuildFile; fileRef = C543943E2BF1EBA4009714D6 /* chime.AIFF */; };
@@ -49,7 +49,7 @@
 		3A7738952BF16DEC00DC0BEA /* BlissTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlissTask.swift; sourceTree = "<group>"; };
 		3A77389A2BF16F1900DC0BEA /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 		3A77389F2BF175F200DC0BEA /* Affirmation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Affirmation.swift; sourceTree = "<group>"; };
-		3A7738A22BF1767D00DC0BEA /* SelfAffiramtionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfAffiramtionListViewModel.swift; sourceTree = "<group>"; };
+		3A7738A22BF1767D00DC0BEA /* SelfAffirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfAffirmationViewModel.swift; sourceTree = "<group>"; };
 		3A7738A42BF17C4500DC0BEA /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		3A7738A62BF17C5800DC0BEA /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		3A7738A82BF17C9C00DC0BEA /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		3A7968802BE51B0500CFEC27 /* BlissBallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlissBallView.swift; sourceTree = "<group>"; };
 		3A7968822BE51B1000CFEC27 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		3A7968842BE51B2900CFEC27 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
-		3A7968892BE51B7F00CFEC27 /* SelfAffirmationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfAffirmationListView.swift; sourceTree = "<group>"; };
+		3A7968892BE51B7F00CFEC27 /* SelfAffirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfAffirmationView.swift; sourceTree = "<group>"; };
 		3A79688B2BE51B8F00CFEC27 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		C51C97F52BF309AA009ADADB /* NotifSetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifSetView.swift; sourceTree = "<group>"; };
 		C543943E2BF1EBA4009714D6 /* chime.AIFF */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = chime.AIFF; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 		3A77389C2BF174AC00DC0BEA /* SelfAffirmation */ = {
 			isa = PBXGroup;
 			children = (
-				3A7968892BE51B7F00CFEC27 /* SelfAffirmationListView.swift */,
+				3A7968892BE51B7F00CFEC27 /* SelfAffirmationView.swift */,
 			);
 			path = SelfAffirmation;
 			sourceTree = "<group>";
@@ -182,7 +182,7 @@
 		3A7738A12BF1766900DC0BEA /* SelfAffirmation */ = {
 			isa = PBXGroup;
 			children = (
-				3A7738A22BF1767D00DC0BEA /* SelfAffiramtionListViewModel.swift */,
+				3A7738A22BF1767D00DC0BEA /* SelfAffirmationViewModel.swift */,
 			);
 			path = SelfAffirmation;
 			sourceTree = "<group>";
@@ -432,7 +432,7 @@
 				C51C97F62BF309AA009ADADB /* NotifSetView.swift in Sources */,
 				C561BC5C2BF4413F005B2D43 /* ThemeSettingsModel.swift in Sources */,
 				C55FBB0F2BD5F679000655DE /* BlissBallApp.swift in Sources */,
-				3A79688A2BE51B7F00CFEC27 /* SelfAffirmationListView.swift in Sources */,
+				3A79688A2BE51B7F00CFEC27 /* SelfAffirmationView.swift in Sources */,
 				3A7968852BE51B2900CFEC27 /* TaskView.swift in Sources */,
 				3A77388B2BF0EE8A00DC0BEA /* CustomBlissBallViewModel.swift in Sources */,
 				3A7738A02BF175F200DC0BEA /* Affirmation.swift in Sources */,
@@ -442,7 +442,7 @@
 				3A7738AC2BF17D0B00DC0BEA /* BlissBallViewModel.swift in Sources */,
 				3A7738962BF16DEC00DC0BEA /* BlissTask.swift in Sources */,
 				3A7738A92BF17C9C00DC0BEA /* Quote.swift in Sources */,
-				3A7738A32BF1767E00DC0BEA /* SelfAffiramtionListViewModel.swift in Sources */,
+				3A7738A32BF1767E00DC0BEA /* SelfAffirmationViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct BlissTask: Identifiable, Hashable, Encodable, Decodable {
+struct BlissTask: Identifiable, Hashable, Codable {
   var id = UUID()
   var title: String
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Affirmation: Hashable {
+struct Affirmation: Hashable, Codable, Identifiable {
   var id = UUID()
   var title: String
 }

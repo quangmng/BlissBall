@@ -60,8 +60,9 @@ struct TaskView: View {
                 EditButton()
             }
             .navigationTitle("Your Tasks")
+            .searchable(text: $taskListViewModel.searchEntry)
         }
-        .searchable(text: $taskListViewModel.searchEntry)
+        
     }
 }
 

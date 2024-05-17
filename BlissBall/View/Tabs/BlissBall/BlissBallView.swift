@@ -44,9 +44,6 @@ struct BlissBallView: View {
       .navigationTitle("BlissBall")
     }
     .onReceive(NotificationCenter.default.publisher(for: .deviceDidShakeNotification)) { _ in
-      Task {
-        await viewModel.fetchData()
-      }
       isAppear = true
     }
   }
