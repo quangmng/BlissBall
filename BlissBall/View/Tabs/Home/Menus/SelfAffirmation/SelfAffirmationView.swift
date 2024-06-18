@@ -4,17 +4,16 @@
 //
 //  Created by JungWoo Choi on 3/5/2024.
 //
-
 import SwiftUI
 
 struct SelfAffirmationView: View {
     @StateObject var saViewModel = SelfAffirmationViewModel()
     @State private var showingNewAffirmationEntry = false
     @State private var newAffirmationEntry = ""
-    @State private var isFetchingQuote = false // State variable for fetching
-    @State private var remainingUses = 5 // Number of uses remaining in the current period
-    @State private var countdown = 30 // Countdown timer for the cooldown period
-    @State private var isCooldownActive = false // State variable to track cooldown
+    @State private var isFetchingQuote = false
+    @State private var remainingUses = 5
+    @State private var countdown = 30
+    @State private var isCooldownActive = false
 
     var body: some View {
         NavigationStack {
@@ -36,15 +35,15 @@ struct SelfAffirmationView: View {
                     }
                     ForEach(saViewModel.searchResults) { affirmation in
                         Text(affirmation.title)
-                            .transition(.move(edge: .top)) // Adds a moving transition for each item
+                            .transition(.move(edge: .top))
                     }
                     .onDelete(perform: saViewModel.delete)
                 }
-                .animation(.spring(), value: saViewModel.affirmations) // Apply spring animation to the list
+                .animation(.spring(), value: saViewModel.affirmations)
                 VStack {
                     Button {
                         withAnimation {
-                            showingNewAffirmationEntry = true // Toggle the text field's visibility with animation
+                            showingNewAffirmationEntry = true
                         }
                     } label: {
                         HStack {
@@ -63,7 +62,7 @@ struct SelfAffirmationView: View {
                     .buttonStyle(.borderedProminent)
                     Text("OR")
                     Button {
-                        isFetchingQuote = true // Disable the button
+                        isFetchingQuote = true
                         Task {
                             await saViewModel.fetchData()
                             if let fetchedQuote = saViewModel.quoteData?.quote {
@@ -71,7 +70,7 @@ struct SelfAffirmationView: View {
                                 saViewModel.addAffirmation(newAffirmation)
                                 newAffirmationEntry = fetchedQuote
                             }
-                            isFetchingQuote = false // Re-enable the button
+                            isFetchingQuote = false
                             remainingUses -= 1
                             if remainingUses == 0 {
                                 startCooldown()
@@ -80,10 +79,9 @@ struct SelfAffirmationView: View {
                     } label: {
                         Text(isCooldownActive ? "Please wait \(countdown)s to generate new quotes" : "Generate a random inspirational quote")
                     }
-                    
                     .padding(.top, 2)
                     .buttonStyle(.borderedProminent)
-                    .disabled(isFetchingQuote || isCooldownActive || remainingUses <= 0) // Disable the button if a quote is being fetched or cooldown is active
+                    .disabled(isFetchingQuote || isCooldownActive || remainingUses <= 0)
                 }
                 .toolbar {
                     EditButton()
@@ -94,7 +92,6 @@ struct SelfAffirmationView: View {
         }
     }
 
-    // Start cooldown timer
     private func startCooldown() {
         isCooldownActive = true
         countdown = 30
@@ -109,7 +106,6 @@ struct SelfAffirmationView: View {
         }
     }
 }
-
 
 #Preview {
     SelfAffirmationView()

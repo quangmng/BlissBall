@@ -40,7 +40,10 @@ class BlissBallViewModel: ObservableObject {
     }
     
     func deleteCompletedTask() {
-        currentTask = nil
+        if let task = currentTask, let index = tasks.firstIndex(where: { $0.id == task.id }) {
+            tasks.remove(at: index)
+            currentTask = nil
+        }
     }
     
     private func saveTasks() {

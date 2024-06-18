@@ -39,7 +39,7 @@ struct SettingView: View {
           Button{
             isNotifSettingTapped.toggle()
           } label: {
-            Text("Check-in notifications (Work In Progress)")
+            Text("Check-in notifications")
           }
           .sheet(isPresented: $isNotifSettingTapped, content: {
             NotifSetView()
